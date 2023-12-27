@@ -1,4 +1,56 @@
 {
+    "header": {
+        "marqueePara": "Halal Restaurants in Georgia: Top 10 Halal Restaurants in Georgia for 2022 - Georgia Weather... Choose the Best Times to Visit - Does Georgia Require a Visa? ... Georgia Visa for Arabs - Travel from Saudi Arabia to Georgia - Everything You Need to Know - 10 Important Tips Before Traveling to Georgia - Emergency Numbers in Georgia – You'll Need Them for Tourism - Medical Tourism in Georgia - Famous Places and Resorts - 10 Tourist Places in Georgia... Not Yet Visited by Arab Travelers - Tourism in Tbilisi and the Top 18 Places Worth Visiting - Tourism in Batumi and the Top 14 Places Worth Visiting",
+        "date": "Sat, 23 December, 2023",
+        "news": "Tourism News",
+        "login": "Login / Register",
+        "links": {
+            "li1": "Home",
+            "li2": {
+                "name": "Tourist Trips",
+                "sublinks": ["Tourist Trips to Georgia", "Tourist Trips to Azerbaijan"]
+            },
+            "li3": {
+                "name": "About the Company",
+                "sublinks": ["About Us", "Contact Us", "Company Policy"]
+            },
+            "li4": {
+                "name": "Our Branches",
+                "sublinks": ["Azerbaijan", "Georgia", "Saudi Arabia"]
+            },
+            "li5": "Air Travel",
+            "li6": "Customer Reviews",
+            "li7": "Create Your Journey"
+        }
+    },
+    "home": {
+      "sec1": {
+        "tit": "Skyline Tourism Company",
+        "para": "Skyline Tourism Company in Azerbaijan and Georgia, the most luxurious, suitable, and trusted name for Arab families and Arab travelers."
+      },
+      "sec2": {
+        "tit": "Tourism in Georgia",
+        "para": "The latest tourist offers with special programs that include several tourist regions and cities according to the number of days of your travel program, with packages from airport to airport."
+      },
+      "sec3": {
+        "tit": "Georgia Offers",
+        "card1": {
+          "cardtit": " Golden Offer in Georgia ❄️ 10 Days 9 Nights",
+          "cardpara": "10 days and 9 nights",
+          "cardbtn": "Inquire and Book on WhatsApp"
+        },
+        "card2": {
+          "cardtit": "Golden Offer in Georgia ❄️ 8 Days 7 Nights",
+          "cardpara": "8 days and 7 nights",
+          "cardbtn": "Inquire and Book on WhatsApp"
+        },
+        "card3": {
+          "cardtit": "Golden Offer in Georgia ❄️ 12 Days 11 Nights",
+          "cardpara": "12 days and 11 nights",
+          "cardbtn": "Inquire and Book on WhatsApp"
+        }
+      }
+    },
     "headerLinks": [
         "home",
         "about",
@@ -26,12 +78,6 @@
         "paragraph": "We offer you travel services in order to facilitate everything on your trip and provide full fun. Only you have to decide and we have to meet"
     },
     "serviciesCards": [
-        {
-            "photo": "https://firebasestorage.googleapis.com/v0/b/seasons-images.appspot.com/o/flights?alt=media&token=61e3b043-700c-4076-ab9a-3f88b4cee02e",
-            "heading": "Flight Reservation",
-            "paragraph": "You no longer have to worry about your flight booking, you now have a whole team tasked with fulfilling your request in this regard and making sure that everything is ready for your convenience.",
-            "link": "flight-book"
-        },
         {
             "photo": "https://firebasestorage.googleapis.com/v0/b/seasons-images.appspot.com/o/programs?alt=media&token=06b6b57f-9327-41c8-8e61-528614145772",
             "heading": "Programmes",

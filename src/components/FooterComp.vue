@@ -1,5 +1,5 @@
 <template>
-    <footer class="py-5">
+    <!-- <footer class="py-5">
         <div class="container">
             <div class="footer-cont d-flex justify-content-between gap-5">
                 <div class="logo">
@@ -69,6 +69,43 @@
                     {{ $t('footerLinks[5]') }}
                 </router-link></span>
         </div>
+    </footer> -->
+    <footer>
+        <section class="col-10 mx-auto my-3">
+            <div class="d-flex flex-wrap align-items-center justify-content-lg-between justify-center">
+                <div class="col-3 mt-lg-0 my-2"><img src="../assets/Images/sky-logo.png" class="footer-image" alt=""></div>
+                    <div class="d-flex col-lg gap-3 justify-content-between w-100">
+                        <div class="d-flex justify-content-center align-items-center text-white bg-success social-link"><i class="fa-brands fa-whatsapp fs-4"></i></div>
+                        <div class="d-flex justify-content-center align-items-center text-white bg-red social-link"><i class="fa-brands fa-instagram fs-4"></i></div>
+                        <div class="d-flex justify-content-center align-items-center text-white bg-blue social-link"><i class="fa-brands fa-twitter fs-4"></i></div>
+                        <div class="d-flex justify-content-center align-items-center text-white bg-primary social-link"><i class="fa-brands fa-facebook-f fs-4"></i></div>
+                        <div class="d-flex justify-content-center align-items-center text-white bg-warning social-link"><i class="fa-brands fa-snapchat fs-4"></i></div>
+                        <div class="d-flex justify-content-center align-items-center text-white bg-black social-link"><i class="fa-brands fa-tiktok fs-4"></i></div>
+                        <div class="d-flex justify-content-center align-items-center text-white bg-danger social-link"><i class="fa-brands fa-youtube fs-4"></i></div>
+                    </div>
+            </div>
+        </section>
+        <section class="d-flex flex-wrap col-10 mx-auto my-5">
+            <div class="col-md-6">
+                <h3 class="text-3xl font-semibold main-color">العنوان</h3>
+                <h5 class="fw-semibold my-2 mt-4">مقراتنا في مكة و الرياض و جورجيا و اذربيجان</h5>
+                <h5 class="fw-semibold my-2">+966535083575</h5>
+                <h5 class="fw-semibold my-2">info@skylinegeorgia.com</h5>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-3xl font-semibold main-color">روابط سريعة</h3>
+                <ul class="mt-4">
+                    <li class="fs-5 fw-semibold my-3">الرئيسية</li>
+                    <li class="fs-5 fw-semibold my-3">البرامج السياحية</li>
+                    <li class="fs-5 fw-semibold my-3">الشروط والاحكام</li>
+                    <li class="fs-5 fw-semibold my-3">اتصل بنا</li>
+                    <li class="fs-5 fw-semibold my-3">المقالات</li>
+                </ul>
+            </div>
+        </section>
+        <section class="bg-main-color py-2 text-center">
+            <p class="fs-5 fw-semibold text-white">جميع الحقوق محفوظة</p>
+        </section>
     </footer>
 </template>
 <script setup>
@@ -90,91 +127,112 @@ onMounted(async () => {
 
 </script>
 <style lang="scss" scoped>
-footer {
-    background-color: #222222;
-
-    .logo {
-        img {
-            width: 150px !important;
-        }
-    }
-
-    .links {
-        li {
-            a {
-                position: relative;
-                transition: 0.2s;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    transition: 0.2s;
-                    width: 0;
-                    height: 3px;
-                    background-color: var(--blue-color);
-                    bottom: -5px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    border-radius: 50px;
-                }
-
-                &:hover {
-                    color: var(--blue-color) !important;
-                }
-
-                &:hover::before {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    .contacts-info {
-        a {
-            text-decoration: none;
-            transition: 0.2s;
-
-            i {
-                position: relative;
-                top: 5px;
-            }
-
-            &:hover {
-                color: var(--blue-color) !important;
-            }
-        }
-    }
-
-    .copyright {
-        font-size: 13px;
-
-        a {
-            color: var(--orange-color);
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    @media (max-width: 991px) {
-        .footer-cont {
-            flex-wrap: wrap;
-        }
-    }
-
-    @media (max-width: 767px) {
-        .footer-cont {
-            justify-content: center !important;
-            flex-direction: column;
-            align-items: center;
-
-            ul {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    }
+.footer-image{
+    height: 96px;
 }
+.social-link{
+    // @apply h-10 d-flex justify-content-center align-items-center text-white w-10 bg-success rounded-full
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+.bg-blue{
+    background-color: rgb(55, 165, 255);
+}
+.bg-red{
+    background-color: rgb(255, 85, 55);
+}
+.bg-main-color{
+    background: #FD820E;
+}
+.main-color{
+    color: #FD820E;
+}
+// footer {
+//     background-color: #222222;
+
+//     .logo {
+//         img {
+//             width: 150px !important;
+//         }
+//     }
+
+//     .links {
+//         li {
+//             a {
+//                 position: relative;
+//                 transition: 0.2s;
+
+//                 &::before {
+//                     content: "";
+//                     position: absolute;
+//                     transition: 0.2s;
+//                     width: 0;
+//                     height: 3px;
+//                     background-color: var(--blue-color);
+//                     bottom: -5px;
+//                     left: 50%;
+//                     transform: translateX(-50%);
+//                     border-radius: 50px;
+//                 }
+
+//                 &:hover {
+//                     color: var(--blue-color) !important;
+//                 }
+
+//                 &:hover::before {
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+
+//     .contacts-info {
+//         a {
+//             text-decoration: none;
+//             transition: 0.2s;
+
+//             i {
+//                 position: relative;
+//                 top: 5px;
+//             }
+
+//             &:hover {
+//                 color: var(--blue-color) !important;
+//             }
+//         }
+//     }
+
+//     .copyright {
+//         font-size: 13px;
+
+//         a {
+//             color: var(--orange-color);
+//             text-decoration: none;
+
+//             &:hover {
+//                 text-decoration: underline;
+//             }
+//         }
+//     }
+
+//     @media (max-width: 991px) {
+//         .footer-cont {
+//             flex-wrap: wrap;
+//         }
+//     }
+
+//     @media (max-width: 767px) {
+//         .footer-cont {
+//             justify-content: center !important;
+//             flex-direction: column;
+//             align-items: center;
+
+//             ul {
+//                 flex-direction: column;
+//                 text-align: center;
+//             }
+//         }
+//     }
+// }
 </style>

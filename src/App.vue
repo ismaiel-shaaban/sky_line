@@ -47,8 +47,8 @@ import axios from 'axios';
 }
 
 :root {
-  --orange-color: #EC9169;
-  --blue-color: #4F88A1;
+  --orange-color: #4F88A1;
+  --blue-color: #FD820E;
 }
 
 body {
@@ -82,7 +82,7 @@ ul {
   text-align: center;
 
   h1 {
-    color: var(--orange-color);
+    color: var(--blue-color);
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
@@ -97,7 +97,7 @@ ul {
       transform: translateX(-50%);
       height: 3px;
       border-radius: 50px;
-      background-color: var(--orange-color);
+      background-color: var(--blue-color);
     }
   }
 }

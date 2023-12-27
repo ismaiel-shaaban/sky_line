@@ -1,8 +1,8 @@
 <template>
     <div class="home-page">
         <NewPopup :info="info" :openPopup="newPopup" @close-newPopup="() => (newPopup = false)"></NewPopup>
-        <HeaderComp class="position-absolute w-100" style="z-index: 555"></HeaderComp>
-        <div class="landing min-vh-100">
+        <HeaderComp class=" top-0 bg-white w-100" style="z-index: 555"></HeaderComp>
+        <!-- <div class="landing min-vh-100">
             <Carousel class="min-vh-100 m-0 position-relative" :autoplay="3000" :wrap-around="true"
                 :dir="$i18n.locale === 'en' ? 'ltr' : 'rtl'">
                 <Slide class="min-vh-100 w-100 m-0" v-for="(item, index) in slider" :key="index">
@@ -50,8 +50,294 @@
                     <i class="fa-brands fa-snapchat text-white fs-5"></i>
                 </a>
             </div>
-        </div>
-        <div class="apps-section py-5">
+        </div> -->
+        <section class="my-5">
+            <div class="row mx-auto d-flex col-10  flex justify-content-between align-items-center">
+            <div class="col-lg-6 lg:text-start text-center">
+                <h1 class="text-3xl main-color font-semibold">{{$t('home.sec1.tit')}}</h1>
+                <h5 class="text-lg text-gray-600 font-semibold mt-3">{{ $t('home.sec1.para') }}</h5>
+            </div>
+            <div class="col-lg-6 w-full  lg:mt-0 mt-3">
+                <div class="w-50 mx-auto d-flex  flex justify-content-center align-items-center"><img src="../assets/Images/sky-logo.png" class="w-50 lg:ms-auto mx-auto" alt=""></div>
+            </div>
+            </div>
+        </section>
+        <section class="my-5">
+            <h1 class="text-3xl main-color text-center font-semibold">{{ $t('home.sec2.tit') }}</h1>
+            <h4 class="text-lg text-gray-600 col-8 text-center mx-auto mt-5">{{ $t('home.sec2.para') }}</h4>
+        </section>
+        <section class="my-5">
+            <h1 class="text-center main-color">{{ $t('home.sec3.tit') }}</h1>
+            <div class="d-flex flex-wrap col-10 mx-auto mt-5">
+                <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
+                    <div class="card position-relative pb-4">
+                    <img src="../assets/Images/10Days.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="m-0 text-decoration-line-through fw-bold text-center text-lg">1235</p>
+                        <p class="m-0 font-semibold fw-bold text-center">1280</p>
+                        <p class="m-0 text-center text-sm fw-bold">دولار</p>
+                    </div>
+                    <h6 class="text-center">{{ $t('home.sec3.card1.cardtit') }}</h6>
+                    <p class="text-center text-gray-600 my-1 mb-2">{{ $t('home.sec3.card1.cardpara') }}</p>
+                    <button class="prim-btn col-10 mx-auto"><i class="fa-brands fa-whatsapp me-3"></i>{{ $t('home.sec3.card1.cardbtn') }}</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
+                    <div class="card position-relative pb-4">
+                    <img src="../assets/Images/8Days.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-bold m-0 text-decoration-line-through text-gray-400 text-center text-lg">1055</p>
+                        <p class="fw-bold m-0 text-lg font-semibold text-center">1050</p>
+                        <p class="fw-bold m-0 text-center text-sm">دولار</p>
+                    </div>
+                    <h6 class="text-center">{{ $t('home.sec3.card2.cardtit') }}</h6>
+                    <p class="text-center text-gray-600 my-1 mb-2">{{ $t('home.sec3.card2.cardpara') }}</p>
+                    <button class="prim-btn col-10 mx-auto"><i class="fa-brands fa-whatsapp me-3"></i>{{ $t('home.sec3.card2.cardbtn') }}</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
+                    <div class="card position-relative pb-4">
+                    <img src="../assets/Images/12Days.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-bold m-0 text-decoration-line-through text-gray-400 text-center text-lg">1485</p>
+                        <p class="fw-bold m-0 text-lg font-semibold text-center">1590</p>
+                        <p class="fw-bold m-0 text-center text-sm">دولار</p>
+                    </div>
+                    <h6 class="text-center">{{ $t('home.sec3.card3.cardtit') }}</h6>
+                    <p class="text-center text-gray-600 my-1 mb-2">{{ $t('home.sec3.card3.cardpara') }}</p>
+                    <button class="prim-btn col-10 mx-auto"><i class="fa-brands fa-whatsapp me-3"></i>{{ $t('home.sec3.card1.cardbtn') }}</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5 img-overlay d-flex justify-content-center align-items-center">
+          <div class="d-flex flex-wrap align-items-center col-lg-6 col-md-8 col-10 text-center justify-content-between">
+            <h3 class="fw-semibold col-lg-6 text-white">اتصل واتساب واحجز رحلتك</h3>
+            <button class="btn btn-light col-lg-6 lg:mt-0 mt-3 fw-semibold text-lg"><i class="fa-brands fa-whatsapp me-3 text-success"></i>تواصل معنا</button>
+          </div>
+        </section>
+        <section class="my-5">
+            <h2 class="fw-semibold main-color text-center">السياحة في اذربيجان</h2>
+            <h6 class="fw-semibold col-6 mx-auto text-center mt-3">هل تملك منك الإرهاق وضغط العمل؟ إذن هيا بنا على بلاد السحر والعراقة جمهورية أذربيجان مزيج التاريخ والغموض ستجده في السياحة في اذربيجان ابدأ بحجز رحلتك سواء من المملكة العربية السعودية أو من الإمارات ودول الخليج.</h6>
+        </section>
+        <section class="my-5">
+            <h1 class="text-5xl font-semibold text-center main-color">عروض اذربيجان</h1>
+            <div class="d-flex flex-wrap col-10 mx-auto mt-7">
+                <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
+                    <div class="card position-relative pb-4">
+                    <img src="../assets/Images/12Days-azrabegan.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">1280</p>
+                        <p class="fw-semibold m-0 text-center">1630</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج اذربيجان السياحي 12 يوم 11 ليلة العرض الذهبي❄️</h6>
+                    <p class="text-center text-gray-600 my-3">12 ايام و 11 ليالى</p>
+                    <button class="prim-btn rounded-3xl w-10/12 block mx-auto font-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
+                    <div class="card relative pb-4">
+                    <img src="../assets/Images/10Days-azrabegan.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">1110</p>
+                        <p class="fw-semibold m-0 text-lg font-semibold text-center">1420</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج اذربيجان السياحي 10 ايام 9 ليالي العرض الذهبي❄️</h6>
+                    <p class="text-center text-gray-600 my-3">10 ايام و 9 ليالى</p>
+                    <button class="prim-btn w-10/12 block mx-auto font-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
+                    <div class="card position-relative pb-4">
+                    <img src="../assets/Images/8Days-azrabegan.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">940</p>
+                        <p class="fw-semibold m-0 text-center">1210</p>
+                        <p class="fw-semibold m-0 text-center text-sm">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج اذربيجان السياحي 8 ايام 7 ليالي العرض الذهبي❄️</h6>
+                    <p class="text-center text-gray-600 my-3">8 ايام و 7 ليالى</p>
+                    <button class="prim-btn w-10/12 block mx-auto font-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 my-5 position-relative pt-5 d-none d-md-block">
+            <div class="img-overlay2"></div>
+            <h6 class="text-center col-7 position-relative z-10 my-5 mx-auto">نسعي الي نقل السياحة في جورجيا و اذربيجان الي افضل وارقي مستوي بأنسب الاسعار . سياحتكم في امان مع سكاي لاين الاسم الاضمن و الاشهر في مجال السياحة في دولتين جورجيا و اذربيجان</h6>
+            <div class="card position-relative z-10 col-10 mx-auto pb-4 d-flex flex-wrap justify-content-lg-between justify-content-center">
+                <img src="../assets/Images/10Days.png" class="card-image" alt="">
+                <div class="price-overlay">
+                    <p class="fw-semibold m-0 text-decoration-line-through text-center">1235</p>
+                    <p class="fw-semibold m-0 text-center">1280</p>
+                    <p class="fw-semibold m-0 text-center">دولار</p>
+                </div>
+                <div class="d-flex flex-wrap w-full my-lg-2 mt-1">
+                    <h6 class=" ms-5 fw-semibold px-2 col-6 text-lg-start text-center">برنامج ❄️ جورجيا السياحي 10 ايام 9 ليالي العرض الذهبي</h6>
+                    <h6 class=" me-5 text-lg-end col-lg-4 fw-semibold text-center">10 ايام و 9 ليالى</h6>
+                </div>
+                <div class="d-flex flex-wrap w-full justify-content-lg-between justify-content-center">
+                    <h6 class="w-5/12 ms-3 fw-semibold d-lg-block d-hidden">برنامج ❄️ جورجيا السياحي 10 ايام 9 ليالي العرض الذهبي</h6>
+                    <button class="prim-btn rounded-3xl col-lg-4 col-10 me-lg-5 d-block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5 d-none d-md-block">
+            <div class="d-flex flex-wrap my-5 col-10 mx-auto mt-5">
+                <div class="col-lg-4 col-md-6 px-3 mt-5">
+                    <div class="card position-relative pb-4">
+                    <img src="../assets/Images/8Days.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">1055</p>
+                        <p class="fw-semibold m-0 text-center">1050</p>
+                        <p class="fw-semibold m-0 text-center text-sm">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج ❄️ جورجيا السياحي 8 ايام 7 ليالي العرض الذهبي</h6>
+                    <p class="text-center my-1 mb-2">8 ايام و 7 ليالى</p>
+                    <button class="prim-btn col-10 d-block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-3 mt-5">
+                    <div class="card position-relative pb-4">
+                    <img src="../assets/Images/12Days.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">1485</p>
+                        <p class="fw-semibold m-0 text-center">1590</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج ❄️ جورجيا السياحي 12 يوم 11 ليلة العرض الذهبي</h6>
+                    <p class="text-center my-1 mb-2">12 ايام و 11 ليالى</p>
+                    <button class="prim-btn col-10 d-block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-3 mt-5">
+                    <div class="card position-relative pb-4">
+                    <img src="../assets/Images/12Days-azrabegan.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-center text-decoration-line-through">1280</p>
+                        <p class="fw-semibold m-0 text-center">1630</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج اذربيجان السياحي 12 يوم 11 ليلة العرض الذهبي❄️</h6>
+                    <p class="text-center my-1 mb-2">12 ايام و 11 ليالى</p>
+                    <button class="prim-btn col-10 d-block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-3 mt-5">
+                    <div class="card position-relative pb-4">
+                    <img src="../assets/Images/10Days-azrabegan.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-center text-decoration-line-through">1110</p>
+                        <p class="fw-semibold m-0 text-center">1420</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج اذربيجان السياحي 10 ايام 9 ليالي العرض الذهبي❄️</h6>
+                    <p class="text-center my-1 mb-2">10 ايام و 9 ليالى</p>
+                    <button class="prim-btn col-10 d-block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-3 mt-5">
+                    <div class="card position-relative pb-4">
+                    <img src="../assets/Images/8Days-azrabegan.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-center text-decoration-line-through">940</p>
+                        <p class="fw-semibold m-0 text-center">1210</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج اذربيجان السياحي 8 ايام 7 ليالي العرض الذهبي❄️</h6>
+                    <p class="text-center my-1 mb-2">8 ايام و 7 ليالى</p>
+                    <button class="prim-btn col-10 d-block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-10 position-relative pt-5 d-block d-md-none">
+            <div class="img-overlay2"></div>
+            <p class="text-center col-7 position-relative z-10 my-3 mx-auto">نسعي الي نقل السياحة في جورجيا و اذربيجان الي افضل وارقي مستوي بأنسب الاسعار . سياحتكم في امان مع سكاي لاين الاسم الاضمن و الاشهر في مجال السياحة في دولتين جورجيا و اذربيجان</p>
+            <swiper :modules="modules" :slides-per-view="1" :loop="true" :autoplay="{delay:2500,diableOnInteraction:false,pauseOnMouseEnter:true}" :navigation="true" :pagination="{clickable: true,}"  :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange" class="w-100 text-center">
+                <swiper-slide>
+                <div class="card mb-5 position-relative z-10 col-10 mx-auto pb-4">
+                    <img src="../assets/Images/10Days.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">1235</p>
+                        <p class="fw-semibold m-0 text-center">1280</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h2 class="card-title">برنامج ❄️ جورجيا السياحي 10 ايام 9 ليالي العرض الذهبي</h2>
+                    <p class="text-center text-gray-600 my-3">10 ايام و 9 ليالى</p>
+                    <button class="prim-btn col-10 block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                </div>
+                </swiper-slide>
+                <swiper-slide>
+                <div class="card position-relative z-10 col-10 mx-auto pb-4">
+                    <img src="../assets/Images/8Days.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">1055</p>
+                        <p class="fw-semibold m-0 text-center">1050</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج ❄️ جورجيا السياحي 8 ايام 7 ليالي العرض الذهبي</h6>
+                    <p class="text-center my-1 mb-2">8 ايام و 7 ليالى</p>
+                    <button class="prim-btn col-10 block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                </div>
+                </swiper-slide>
+                <swiper-slide>
+                <div class="card position-relative z-10 col-10 mx-auto pb-4">
+                    <img src="../assets/Images/12Days.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">1485</p>
+                        <p class="fw-semibold m-0 text-center">1590</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج ❄️ جورجيا السياحي 12 يوم 11 ليلة العرض الذهبي</h6>
+                    <p class="text-center my-1 mb-2">12 ايام و 11 ليالى</p>
+                    <button class="prim-btn col-10 block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                </div>
+                </swiper-slide>
+                <swiper-slide>
+                <div class="card position-relative z-10 col-10 mx-auto pb-4">
+                    <img src="../assets/Images/12Days-azrabegan.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">1280</p>
+                        <p class="fw-semibold m-0 text-center">1630</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج اذربيجان السياحي 12 يوم 11 ليلة العرض الذهبي❄️</h6>
+                    <p class="text-center my-1 mb-2">12 ايام و 11 ليالى</p>
+                    <button class="prim-btn col-10 block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                </div>
+                </swiper-slide>
+                <swiper-slide>
+                <div class="card position-relative z-10 col-10 mx-auto pb-4">
+                    <img src="../assets/Images/10Days-azrabegan.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">1110</p>
+                        <p class="fw-semibold m-0 text-center">1420</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج اذربيجان السياحي 10 ايام 9 ليالي العرض الذهبي❄️</h6>
+                    <p class="text-center my-1 mb-2">10 ايام و 9 ليالى</p>
+                    <button class="prim-btn col-10 block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                </div>
+                </swiper-slide>
+                <swiper-slide>
+                <div class="card position-relative z-10 col-10 mx-auto pb-4">
+                    <img src="../assets/Images/8Days-azrabegan.png" class="card-image" alt="">
+                    <div class="price-overlay">
+                        <p class="fw-semibold m-0 text-decoration-line-through text-center">940</p>
+                        <p class="fw-semibold m-0 text-center">1210</p>
+                        <p class="fw-semibold m-0 text-center">دولار</p>
+                    </div>
+                    <h6 class="text-center">برنامج اذربيجان السياحي 8 ايام 7 ليالي العرض الذهبي❄️</h6>
+                    <p class="text-center my-1 mb-2">8 ايام و 7 ليالى</p>
+                    <button class="prim-btn col-10 block mx-auto fw-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
+                </div>
+                </swiper-slide>
+            </swiper>
+        </section>
+        <!-- <div class="apps-section py-5">
             <div class="container">
                 <div class="heading-text">
                     <h1>{{ $t('tourApps.heading') }}</h1>
@@ -67,15 +353,15 @@
                         <img class="img-fluid" src="/images/appstore.png" alt="" />
                     </a>
                 </div>
-                <!-- <div class="text-center mt-5">
+                <div class="text-center mt-5">
                     <button class="butn p-2 px-4 rounded-1 text-decoration-none fs-5" @click="aboutPopup = true">
                         {{ $t('buttons.readMore') }}
                     </button>
-                </div> -->
+                </div>
                 <AboutPopUp :openPopup="aboutPopup" @close-aboutPopup="() => (aboutPopup = false)"></AboutPopUp>
             </div>
-        </div>
-        <div class="reservation-section py-5">
+        </div> -->
+        <!-- <div class="reservation-section py-5">
             <div class="container">
                 <div class="heading-text">
                     <h1>{{ $t('reservation.heading') }}</h1>
@@ -102,7 +388,7 @@
                     </button>
                 </form>
             </div>
-        </div>
+        </div> -->
         <div class="services-section py-5">
             <div class="container">
                 <div class="heading-text">
@@ -117,7 +403,7 @@
                             <div class="box overflow-hidden bg-white rounded-2 d-flex flex-column h-100">
                                 <div class="image">
                                     <router-link v-if="!item.link.includes('http')" :to="`/${$i18n.locale}/${item.link}`">
-                                        <img v-if="images[index]"  class="img-fluid w-100" :src="`https://seasonreal.seasonsge.com/appv1real/${images[index].image}`" alt="" />
+                                        <img v-if="images[index]"  class="img-fluid w-100" :src="`https://seasonreal.seasonsge.com/appv1real/${images[index+1].image}`" alt="" />
                                     </router-link>
                                     <a v-if="item.link.includes('http')" target="_blank" :href="item.link">
                                         <img v-if="images[index]" class="img-fluid w-100" :src="`https://seasonreal.seasonsge.com/appv1real/${images[index].image}`" alt="" />
@@ -162,25 +448,101 @@
             </div>
         </div> -->
         <Loader v-if="loading"></Loader>
+        <section class="bg-main-color py-5 d-flex justify-content-center align-items-center mb-5">
+            <div class="d-flex flex-wrap col-10 justify-content-between">
+                <h3 class="fw-bold col-md-6 text-center text-white">من اراء عملائنا</h3>
+                <button class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold"><i class="fa-solid fa-comments me-5"></i>استكشف اراء العملاء السابقين</button>
+            </div>
+        </section>
+        <section class="my-10">
+            <swiper :modules="modules" :slides-per-view="numOfImage" :loop="true" :autoplay="{delay:2500,diableOnInteraction:false,pauseOnMouseEnter:true}"  :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange" class=" px-5 d-flex justify-content-center">
+                <swiper-slide><img src="../assets/Images/image1.png" class="w-100" alt=""></swiper-slide>
+                <swiper-slide><img src="../assets/Images/image2.png" class="w-100" alt=""></swiper-slide>
+                <swiper-slide><img src="../assets/Images/image3.png" class="w-100" alt=""></swiper-slide>
+                <swiper-slide><img src="../assets/Images/image4.png" class="w-100" alt=""></swiper-slide>
+                <swiper-slide><img src="../assets/Images/image5.png" class="w-100" alt=""></swiper-slide>
+                <swiper-slide><img src="../assets/Images/image6.png" class="w-100" alt=""></swiper-slide>
+                <swiper-slide><img src="../assets/Images/image7.png" class="w-100" alt=""></swiper-slide>
+                <swiper-slide><img src="../assets/Images/image8.png" class="w-100" alt=""></swiper-slide>
+                <swiper-slide><img src="../assets/Images/image9.png" class="w-100" alt=""></swiper-slide>
+            </swiper>
+        </section>
+        <section class="bg-main-color py-5 d-flex justify-content-center align-items-center my-5">
+            <div class="d-flex flex-wrap col-10 justify-content-md-between justify-center align-items-center">
+                <h3 class="fw-bold col-md-6 text-center text-white">انشئ رحلتك بسعر مناسب</h3>
+                <button class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold">انشئ رحلتك الان</button>
+            </div>
+        </section>
+        <section class="border-bottom border-black my-5">
+            <div class="col-10 mx-auto my-5">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="text-center col-lg-3 col-md-6 mt-3">
+                <div class="circle-shadow-o"><i class="fa-solid fa-shield text-white fs-1"></i></div>
+                <h3 class="text-2xl mt-5 ">وسائل دفع أمنة</h3>
+                </div>
+                <div class="text-center col-lg-3 col-md-6 mt-3">
+                <div class="circle-shadow-b"><i class="fa-regular fa-map text-white fs-1"></i></div>
+                <h3 class="text-2xl mt-5 ">اختار مكانك المفضل</h3>
+                </div>
+                <div class="text-center col-lg-3 col-md-6 mt-3">
+                <div class="circle-shadow-o"><i class="fa-solid fa-hotel text-white fs-1"></i></div>
+                <h3 class="text-2xl mt-5 ">افضل الفنادق</h3>
+                </div>
+                <div class="text-center col-lg-3 col-md-6 mt-3">
+                <div class="circle-shadow-b"><i class="fa-solid fa-plane text-white fs-1"></i></div>
+                <h3 class="text-2xl mt-5 ">رحلات منظمة وأمنة</h3>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="d-flex flex-wrap col-10 mx-auto justify-content-lg-between justify-center">
+            <div class="col-lg-4 col-md-6 text-center">
+                <i class="fa-solid fa-phone main-color contact-sec fs-2"></i>
+                <h3 class="text-2xl font-bold my-5 text-gray-800">خدمة عملاء أذربيجان</h3>
+                <h4><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">994557896357+</span></h4>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <i class="fa-solid fa-phone main-color contact-sec fs-2"></i>
+                <h3 class="text-2xl font-bold my-5 text-gray-800">خدمة عملاء جورجيا</h3>
+                <h4 class="mb-2"><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold">995555550806+</span></h4>
+                <h4 class="mb-2"><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">995555550859+</span></h4>
+                <h4 class="mb-2"><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">995555550871+</span></h4>
+                <h4 class="mb-2"><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">995555550872+</span></h4>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <i class="fa-solid fa-phone main-color contact-sec fs-2"></i>
+                <h3 class="text-2xl font-bold my-5 text-gray-800">خدمة عملاء السعودية</h3>
+                <h4><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">966535083575+</span></h4>
+            </div>
+        </section>
         <FooterComp></FooterComp>
     </div>
 </template>
 <script setup>
 import HeaderComp from "../components/HeaderComp.vue";
 import FooterComp from "../components/FooterComp.vue";
-import AboutPopUp from "../components/AboutPopUp.vue";
+// import AboutPopUp from "../components/AboutPopUp.vue";
 import OffersPopup from "../components/OffersPopup.vue";
 import NewPopup from "../components/NewPopup.vue";
 import { ref, watch, onMounted } from "vue";
 import axios from "axios";
 import i18n from "../i18n";
-import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
+import { Carousel, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 import router from "../router";
 import Loader from "../components/Loader.vue";
 import { useVuelidate } from "@vuelidate/core";
 import { required, helpers } from "@vuelidate/validators";
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+// import 'path-to-your-style/style.css'; // replace with the correct path
 
+// Import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+const modules = ref([Autoplay, Pagination, Navigation]);
 
 
 const slider = ref([]);
@@ -191,6 +553,7 @@ const offersPopup = ref(false);
 const info = ref([]);
 const loading = ref(false)
 const searchError = ref('')
+const numOfImage = ref('4')
 const searchForm = ref({
     searchInput: '',
 })
@@ -340,6 +703,88 @@ onMounted(async () => {
 </script>
 
 <style lang="scss" scoped>
+.bg-main-color{
+    background: #FD820E;
+}
+.main-color{
+    color: #FD820E;
+}
+.z-10{
+    z-index: 10;
+}
+.z-20{
+    z-index: 20;
+}
+.img-overlay2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: url(../assets/Images/bg1.jpg) no-repeat center;
+  background-size: 100% 100%;
+  opacity: 0.8;
+}
+.circle-shadow-o{
+    //@apply w-[120px] drop-shadow-[-6px_2px_0px_rgba(0,0,0,0.25)] mx-auto h-[120px] rounded-full bg-primary flex justify-center items-center
+    width: 120px;
+    filter: drop-shadow(-6px 2px 0px rgba(0,0,0,0.25));
+    margin-inline: auto;
+    height: 120px;
+    border-radius: 100%;
+    background: #FD820E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-shadow-b{
+    //@apply w-[120px] drop-shadow-[-6px_2px_0px_rgba(0,0,0,0.25)] mx-auto h-[120px] rounded-full bg-primary flex justify-center items-center
+    width: 120px;
+    filter: drop-shadow(-6px 2px 0px rgba(0,0,0,0.25));
+    margin-inline: auto;
+    height: 120px;
+    border-radius: 100%;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-sec{
+    padding-inline: 20px;
+    padding-block: 20px;
+    border-radius: 100%;
+    border: 4px solid #FD820E;
+}
+.prim-btn {
+    // @apply bg-primary text-white px-4 p-2 rounded-md hover:bg-white hover:text-primary border-2 border-primary;
+    background: #FD820E;
+    color: white;
+    padding-inline: 16px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 2px solid #FD820E;
+}
+.prim-btn:hover {
+    background: #fff;
+    color: #FD820E;
+}
+.img-overlay{
+    height: 300px;
+  background: url('../assets/Images/bg1.jpg') no-repeat center;
+  background-size: 100% 100%;
+}
+.price-overlay{
+//   @apply w-[100px] h-[100px] absolute top-[250px] rounded-full right-4 border-4 border-warning bg-white pt-2
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    border-radius: 100%;
+    right: 16px;
+    border: solid 4px #FD820E;
+    background: #fff;
+    padding-top: 8px;
+}
 .home-page {
     .landing {
         .socials {
@@ -403,8 +848,6 @@ onMounted(async () => {
     }
 
     .services-section {
-        background-color: #f5f5f5;
-
         .box-cont {
             .box {
                 box-shadow: 0 3px 15px rgba(105, 105, 105, 0.226);

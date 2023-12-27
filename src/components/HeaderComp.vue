@@ -1,5 +1,5 @@
 <template>
-    <header class="py-3 position-relative">
+    <!-- <header class="py-3 position-relative">
         <div
             :class="`container d-flex align-items-center justify-content-between gap-4 ${router.currentRoute.value.path !== `/${$i18n.locale}` ? 'not-home' : ''}`">
             <div class="logo">
@@ -58,11 +58,147 @@
             <i :class="`fa-solid fa-bars fs-2 menu ${openMenu ? 'open' : ''}`" @click="openMenu = true"></i>
             <i :class="`fa-solid fa-xmark fs-2 close ${openMenu ? 'open' : ''}`" @click="openMenu = false"></i>
         </div>
+    </header> -->
+    <header class="w-full d-flex flex-wrap">   
+        <div class="min-h-60 w-100 bg-gray-200 d-sm-block d-none">
+            <div class="container mx-auto d-flex flex-wrap gap-lg-1 justify-content-between align-items-center h-100 pt-3">
+                <div class="d-flex col-lg col-md-6 gap-1 align-items-center mb-3">
+                    <i class="fa-solid fa-calendar main-color"></i>
+                    <span class="me-3 ms-2 fs-6">{{$t('header.date')}}</span>
+                    <span class="main-color">{{ $t('header.news') }}</span>
+                </div>
+                <marquee direction="right" class="mb-3 col-lg col-md-6 overflow-hidden my-md-0 my-3">
+                    {{$t('header.marqueePara')}}
+                </marquee>
+                <div class="d-flex col-lg col-md-6 gap-1 align-items-center mb-3">
+                    <div class="d-flex align-items-center bg-white px-2 py-1 rounded-3">
+                        <i class="fa-solid fa-sun main-color"></i>
+                        <span class="mx-1 fs-6">7.84 C</span>
+                        <span class="fs-6">Tbilis</span>
+                    </div>
+                    <router-link :to="`/${$i18n.locale}/client-login`" class="bg-main-color text-white px-2 p-1 rounded-3 d-flex align-items-center ms-3">
+                        <i class="fa-solid fa-user fs-6 ms-1"></i>
+                        <span class="ms-2">{{$t('header.login')}}</span>
+                    </router-link>
+                    <span class="lang fw-bold d-flex align-items-center gap-2" @click="changeLang">
+                        <i class="fa-solid fa-globe fs-4"></i>
+                        {{ $i18n.locale === 'en' ? 'AR' : 'EN' }}
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="h-[250px] w-full overflow-hidden relative" v-if="isRouteActive('/ar') || isRouteActive('/en')">
+            <img src="../assets/Images/W8A7cfSFFqkctjTCafzWsZHM0Dd1Zz-meta2LPZg9in2Ykg2YTYp9mK2YYuanBn-.jpg" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100">
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 order-first order-sm-0">
+            <div class="container">
+                <a class="navbar-brand me-0 me-md-auto ms-4" href="#"><img :src="`https://seasonreal.seasonsge.com/${info.logo}`" alt="" height="60"></a>
+                <button class="navbar-toggler order-md-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item position-relativerelative">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house ms-2"></i>{{$t('header.links.li1')}}</a>
+                        </li>
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-globe ms-2"></i>{{ $t('header.links.li2.name') }}
+                            </a>
+                            <ul class="dropdown-menu text-end">
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-map ms-1"></i>{{ $t('header.links.li2.sublinks[0]') }}</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-map ms-1"></i>{{ $t('header.links.li2.sublinks[1]') }}</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-info ms-2"></i>{{ $t('header.links.li3.name') }}
+                            </a>
+                            <ul class="dropdown-menu text-end">
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-info ms-1"></i> {{ $t('header.links.li3.sublinks[0]') }}</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-phone ms-1"></i> {{ $t('header.links.li3.sublinks[1]') }}</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-sheet-plastic ms-1"></i> {{ $t('header.links.li3.sublinks[2]') }}</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-info ms-2"></i>{{ $t('header.links.li4.name') }}
+                            </a>
+                            <ul class="dropdown-menu text-end">
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-map ms-1"></i> {{ $t('header.links.li4.sublinks[0]') }}</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-map ms-1"></i>{{ $t('header.links.li4.sublinks[1]') }}</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-map ms-1"></i>{{ $t('header.links.li4.sublinks[2]') }}</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item position-relative">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-plane ms-2"></i>{{ $t('header.links.li5') }}</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-comments ms-2"></i>{{ $t('header.links.li6') }}</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-dollar-sign ms-2"></i>{{ $t('header.links.li7') }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-cart-shopping fs-3 main-color order my-md-4"></i>
+            </div>
+        </nav>
+        <!-- <div class="min-h-[70px] w-full shadow-md lg:order-none order-first">
+            <div class="lg:w-10/12 md:w-11/12 px-7 mx-auto flex flex-wrap items-center h-full justify-between">
+                <div class="h-[70px] me-5 mx-auto py-2">
+                    <img src="../assets/Images/sky-logo.png" class="h-full" alt="">
+                </div>
+                <nav class="me-auto lg:w-10/12 w-2/12 lg:order-none order-first h-full flex items-center">
+                    <button class="resposive-icon px-3 py-2 text-black bg-secondry-1 hidden text-2xl" @click="toggleMenuBar" v-if="!menubarOpen"><i class="fa-solid fa-bars"></i></button>
+                <button class="resposive-icon px-3 py-2 text-black bg-secondry-1 hidden text-2xl" @click="toggleMenuBar" v-if="menubarOpen"><i class="fa-solid fa-x"></i></button>
+                    <ul class="flex flex-wrap items-center ul-menu h-full" v-if="menubarOpen || windowWidth >= 1023.999999999999999">
+                        <li class="list-item">
+                            <span class="span-dec relative w-full" :class="{ active: isRouteActive('/') }"><i class="fa-solid fa-house me-2"></i>الرئيسية</span>
+                        </li>
+                        <li class="list-item" @click="toggleSubMenu('1')">
+                            <span class="span-dec relative"><i class="fa-solid fa-globe me-2"></i>رحلات سياحية<i class="fa-solid fa-caret-down text-primary ms-1" :class="iconRotate1"></i></span>
+                            <ul class="sub-menu md:mt-0 mt-5" v-if="subMenu1">
+                            <li :class="{ active: isRouteActive('/honordoctor') }" @click="toggleMenuBar"> <i class="fa-solid fa-map me-3"></i>رحلات سياحية لجورجيا</li>
+                            <li :class="{ active: isRouteActive('/ProfessionalDoctorate') }" @click="toggleMenuBar"><i class="fa-solid fa-map me-3"></i>رحلات سياحية لأذربيجان</li>
+                            </ul>
+                        </li>
+                        <li class="list-item" @click="toggleSubMenu('2')">
+                            <span class="span-dec relative"><i class="fa-solid fa-info me-2"></i>عن الشركة<i class="fa-solid fa-caret-down text-primary ms-1" :class="iconRotate2"></i></span>
+                            <ul class="sub-menu md:mt-0 mt-5" v-if="subMenu2">
+                            <li :class="{ active: isRouteActive('/honordoctor') }" @click="toggleMenuBar"> <i class="fa-solid fa-circle-info me-3"></i> من نحن</li>
+                            <li :class="{ active: isRouteActive('/ProfessionalDoctorate') }" @click="toggleMenuBar"><i class="fa-solid fa-phone me-3"></i> تواصل معنا</li>
+                            <li :class="{ active: isRouteActive('/ProfessionalDoctorate') }" @click="toggleMenuBar"><i class="fa-solid fa-sheet-plastic me-3"></i> سياسة الشركة</li>
+                            </ul>
+                        </li>
+                        <li class="list-item" @click="toggleSubMenu('3')">
+                            <span class="span-dec relative"><i class="fa-solid fa-location-dot me-2"></i>فروعنا<i class="fa-solid fa-caret-down text-primary ms-1" :class="iconRotate3"></i></span>
+                            <ul class="sub-menu md:mt-0 mt-5" v-if="subMenu3">
+                            <li :class="{ active: isRouteActive('/honordoctor') }" @click="toggleMenuBar"> <i class="fa-solid fa-map me-3"></i> أذربيجان</li>
+                            <li :class="{ active: isRouteActive('/ProfessionalDoctorate') }" @click="toggleMenuBar"><i class="fa-solid fa-map me-3"></i>جورجيا</li>
+                            <li :class="{ active: isRouteActive('/ProfessionalDoctorate') }" @click="toggleMenuBar"><i class="fa-solid fa-map me-3"></i>السعودية</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            <span class="span-dec relative"><i class="fa-solid fa-plane me-2"></i>الرحلات الجوية</span>
+                        </li>
+                        <li class="list-item">
+                            <span class="span-dec relative"><i class="fa-solid fa-comments me-2"></i>أراء العملاء</span>
+                        </li>
+                        <li class="list-item">
+                            <span class="span-dec relative"><i class="fa-solid fa-dollar-sign me-2"></i>انشئ رحتلك</span>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="fa-solid fa-cart-shopping text-2xl text-primary"></button>
+                <button class="fa-solid fa-user text-2xl text-primary ms-5" v-if="windowWidth < 1023.999999999999999"></button>
+            </div>
+        </div> -->
     </header>
 </template>
 <script setup>
 import { ref, onMounted } from 'vue';
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import axios from 'axios'
 import i18n from '../i18n'
 
@@ -70,8 +206,11 @@ const router = useRouter()
 const openMenu = ref(false)
 const info = ref([])
 const userInfo = ref({})
+const route = useRoute();
 const openAccountBox = ref(false)
-
+const isRouteActive = (routePath) => {
+  return route.fullPath === routePath;
+};
 const changeLang = async () => {
     if (i18n.global.locale.value === 'en') {
         i18n.global.locale.value = 'ar'
@@ -122,62 +261,74 @@ onMounted(async () => {
 
 </script>
 <style lang="scss" scoped>
-.menu {
-    display: none;
+.min-h-60{
+    min-height: 60px;
 }
-
-.close {
-    display: none;
+.bg-gray-200{
+    background: #cecdcd;
 }
+.bg-main-color{
+    background: #FD820E;
+}
+.main-color{
+    color: #FD820E;
+}
+// .menu {
+//     display: none;
+// }
 
-header {
-    .container.not-home {
-        border-bottom: 1px solid #e4e4e4;
-        padding-bottom: 20px;
-    }
+// .close {
+//     display: none;
+// }
 
-    .logo {
-        img {
-            width: 100px !important;
-        }
-    }
+// header {
+//     .container.not-home {
+//         border-bottom: 1px solid #e4e4e4;
+//         padding-bottom: 20px;
+//     }
 
-    .links {
-        li {
-            a {
-                position: relative;
-                transition: 0.2s;
+//     .logo {
+//         img {
+//             width: 100px !important;
+//         }
+//     }
 
-                &::before {
-                    content: "";
-                    position: absolute;
-                    transition: 0.2s;
-                    width: 0;
-                    height: 3px;
-                    background-color: var(--blue-color);
-                    bottom: -5px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    border-radius: 50px;
-                }
+//     .links {
+//         li {
+//             a {
+//                 position: relative;
+//                 transition: 0.2s;
 
-                &:hover {
-                    color: var(--blue-color) !important;
-                }
+//                 &::before {
+//                     content: "";
+//                     position: absolute;
+//                     transition: 0.2s;
+//                     width: 0;
+//                     height: 3px;
+//                     background-color: var(--blue-color);
+//                     bottom: -5px;
+//                     left: 50%;
+//                     transform: translateX(-50%);
+//                     border-radius: 50px;
+//                 }
 
-                &:hover::before {
-                    width: 100%;
-                }
+//                 &:hover {
+//                     color: var(--blue-color) !important;
+//                 }
 
-                &.router-link-active {
-                    color: var(--blue-color) !important;
+//                 &:hover::before {
+//                     width: 100%;
+//                 }
 
-                    &::before {
-                        width: 100%;
-                    }
-                }
-            }
-        }
+//                 &.router-link-active {
+//                     color: var(--blue-color) !important;
+
+//                     &::before {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
 
         .lang {
             cursor: pointer;
@@ -187,60 +338,60 @@ header {
                 color: var(--blue-color);
             }
         }
-    }
+//     }
 
-    .account {
-        .box {
-            position: absolute;
-            top: 120%;
-            right: 0;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.377);
-        }
-    }
+//     .account {
+//         .box {
+//             position: absolute;
+//             top: 120%;
+//             right: 0;
+//             box-shadow: 0 0 15px rgba(0, 0, 0, 0.377);
+//         }
+//     }
 
-    @media (max-width: 991px) {
-        .container {
-            padding-bottom: 0 !important;
-            border: none !important;
-        }
+//     @media (max-width: 991px) {
+//         .container {
+//             padding-bottom: 0 !important;
+//             border: none !important;
+//         }
 
-        .menu {
-            display: block;
-            cursor: pointer;
+//         .menu {
+//             display: block;
+//             cursor: pointer;
 
-            &.open {
-                display: none;
-            }
-        }
+//             &.open {
+//                 display: none;
+//             }
+//         }
 
-        .close {
-            cursor: pointer;
+//         .close {
+//             cursor: pointer;
 
-            &.open {
-                display: block;
-            }
-        }
+//             &.open {
+//                 display: block;
+//             }
+//         }
 
-        .links {
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.158);
-            position: absolute;
-            flex-direction: column;
-            background-color: white;
-            border-radius: 5px;
-            top: -580%;
-            width: 90%;
-            padding: 20px;
-            z-index: 55555;
-            gap: 30px !important;
-            transition: 0.2s;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90% !important;
+//         .links {
+//             box-shadow: 0 0 15px rgba(0, 0, 0, 0.158);
+//             position: absolute;
+//             flex-direction: column;
+//             background-color: white;
+//             border-radius: 5px;
+//             top: -580%;
+//             width: 90%;
+//             padding: 20px;
+//             z-index: 55555;
+//             gap: 30px !important;
+//             transition: 0.2s;
+//             left: 50%;
+//             transform: translateX(-50%);
+//             width: 90% !important;
 
-            &.open {
-                top: 100%;
-            }
-        }
-    }
-}
+//             &.open {
+//                 top: 100%;
+//             }
+//         }
+//     }
+// }
 </style>
