@@ -447,21 +447,21 @@
                 <OffersPopup :openPopup="offersPopup" @close-offersPopup="() => offersPopup = false"></OffersPopup>
             </div>
         </div> -->
-        <section class="border-bottom border-black my-5">
+        <section ref="targetDiv" class="border-bottom border-black my-5" id="createDiv">
             <div class="col-10 mx-auto my-5">
                 <div class="d-flex flex-wrap justify-content-between">
                     <div class="text-center col-lg-3 col-md-6 mt-3" v-for="(item, index) in $tm('serviciesCards')" :key="index">
-                        <div class="circle-shadow-o" v-if="index == 0"><i class="fa-solid fa-shield text-white fs-1"></i></div>
-                        <div class="circle-shadow-b" v-else-if="index == 1"><i class="fa-solid fa-hotel text-white fs-1"></i></div>
-                        <div class="circle-shadow-o" v-else-if="index == 2"><i class="fa-solid fa-car-side text-white fs-1"></i></div>
-                        <div class="circle-shadow-b" v-else><i class="fa-sharp fa-solid fa-train text-white fs-1"></i></div>
-                        <router-link v-if="!item.link.includes('http')" class="fw-bold"
+                        <router-link v-if="!item.link.includes('http')" class="fw-bold text-decoration-none"
                         :to="`/${$i18n.locale}/${item.link}`">
-                            <h3 class="text-2xl mt-5 ">{{item.heading }}</h3>
+                            <div class="circle-shadow-o" v-if="index == 0"><i class="fa-solid fa-shield text-white fs-1"></i></div>
+                            <div class="circle-shadow-b" v-else-if="index == 1"><i class="fa-solid fa-hotel text-white fs-1"></i></div>
+                            <div class="circle-shadow-o" v-else-if="index == 2"><i class="fa-solid fa-car-side text-white fs-1"></i></div>
+                            <h3 class="text-2xl mt-5 fw-bold text-decoration-underline">{{item.heading }}</h3>
                         </router-link>
                         <a v-if="item.link.includes('http')" target="_blank" class="fw-bold"
                         :href="item.link">
-                            <h3 class="text-2xl mt-5 ">{{item.heading }}</h3>
+                            <div class="circle-shadow-b"><i class="fa-sharp fa-solid fa-train text-white fs-1"></i></div>
+                            <h3 class="text-2xl mt-5 fw-bold">{{item.heading }}</h3>
                         </a>
                     </div>
                     <!-- <div class="text-center col-lg-3 col-md-6 mt-3">
@@ -502,7 +502,7 @@
         <section class="bg-main-color py-5 d-flex justify-content-center align-items-center my-5">
             <div class="d-flex flex-wrap col-10 justify-content-md-between justify-center align-items-center">
                 <h3 class="fw-bold col-md-6 text-center text-white">{{ $t('home.sec8.tit') }}</h3>
-                <button class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold">{{ $t('home.sec8.btn') }}</button>
+                <button @click="scrollToDiv" class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold" >{{ $t('home.sec8.btn') }}</button>
             </div>
         </section>  
         <section class="d-flex flex-wrap col-10 mx-auto justify-content-lg-between justify-center">
@@ -565,7 +565,12 @@ const numOfImage = ref('4')
 const searchForm = ref({
     searchInput: '',
 })
-
+const targetDiv = ref(null);
+const scrollToDiv = ()=>{
+        if (targetDiv.value) {
+            targetDiv.value.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
 const rules = {
     searchInput: { required: helpers.withMessage("Required Field", required) },
 }
