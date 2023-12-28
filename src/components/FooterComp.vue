@@ -87,24 +87,22 @@
         </section>
         <section class="d-flex flex-wrap col-10 mx-auto my-5">
             <div class="col-md-6">
-                <h3 class="text-3xl font-semibold main-color">العنوان</h3>
-                <h5 class="fw-semibold my-2 mt-4">مقراتنا في مكة و الرياض و جورجيا و اذربيجان</h5>
-                <h5 class="fw-semibold my-2">+966535083575</h5>
-                <h5 class="fw-semibold my-2">info@skylinegeorgia.com</h5>
+                <h3 class="text-3xl font-semibold main-color">{{ $t('footer.address.tit') }}</h3>
+                <h5 class="fw-semibold my-2 mt-4">{{ $t('footer.address.details') }}</h5>
+                <h5 class="fw-semibold my-2">{{ $t('footer.address.tel') }}</h5>
+                <h5 class="fw-semibold my-2">{{ $t('footer.address.email') }}</h5>
             </div>
             <div class="col-md-6">
-                <h3 class="text-3xl font-semibold main-color">روابط سريعة</h3>
+                <h3 class="text-3xl font-semibold main-color">{{ $t('footer.linksTit') }}</h3>
                 <ul class="mt-4">
-                    <li class="fs-5 fw-semibold my-3">الرئيسية</li>
-                    <li class="fs-5 fw-semibold my-3">البرامج السياحية</li>
-                    <li class="fs-5 fw-semibold my-3">الشروط والاحكام</li>
-                    <li class="fs-5 fw-semibold my-3">اتصل بنا</li>
-                    <li class="fs-5 fw-semibold my-3">المقالات</li>
+                    <template v-for="item,index in $tm('footer.links')" :key="index">
+                        <li class="fs-5 fw-semibold my-3">{{ item }}</li>
+                    </template>
                 </ul>
             </div>
         </section>
         <section class="bg-main-color py-2 text-center">
-            <p class="fs-5 fw-semibold text-white">جميع الحقوق محفوظة</p>
+            <p class="fs-5 fw-semibold text-white">{{ $t('footer.para') }}</p>
         </section>
     </footer>
 </template>

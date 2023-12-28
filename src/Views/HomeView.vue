@@ -57,7 +57,7 @@
                 <h1 class="text-3xl main-color font-semibold">{{$t('home.sec1.tit')}}</h1>
                 <h5 class="text-lg text-gray-600 font-semibold mt-3">{{ $t('home.sec1.para') }}</h5>
             </div>
-            <div class="col-lg-6 w-full  lg:mt-0 mt-3">
+            <div class="col-lg-6 w-full lg:mt-0 mt-3">
                 <div class="w-50 mx-auto d-flex  flex justify-content-center align-items-center"><img src="../assets/Images/sky-logo.png" class="w-50 lg:ms-auto mx-auto" alt=""></div>
             </div>
             </div>
@@ -75,7 +75,7 @@
                     <div class="price-overlay">
                         <p class="m-0 text-decoration-line-through fw-bold text-center text-lg">1235</p>
                         <p class="m-0 font-semibold fw-bold text-center">1280</p>
-                        <p class="m-0 text-center text-sm fw-bold">دولار</p>
+                        <p class="m-0 text-center text-sm fw-bold">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">{{ $t('home.sec3.card1.cardtit') }}</h6>
                     <p class="text-center text-gray-600 my-1 mb-2">{{ $t('home.sec3.card1.cardpara') }}</p>
@@ -88,7 +88,7 @@
                     <div class="price-overlay">
                         <p class="fw-bold m-0 text-decoration-line-through text-gray-400 text-center text-lg">1055</p>
                         <p class="fw-bold m-0 text-lg font-semibold text-center">1050</p>
-                        <p class="fw-bold m-0 text-center text-sm">دولار</p>
+                        <p class="fw-bold m-0 text-center text-sm">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">{{ $t('home.sec3.card2.cardtit') }}</h6>
                     <p class="text-center text-gray-600 my-1 mb-2">{{ $t('home.sec3.card2.cardpara') }}</p>
@@ -101,7 +101,7 @@
                     <div class="price-overlay">
                         <p class="fw-bold m-0 text-decoration-line-through text-gray-400 text-center text-lg">1485</p>
                         <p class="fw-bold m-0 text-lg font-semibold text-center">1590</p>
-                        <p class="fw-bold m-0 text-center text-sm">دولار</p>
+                        <p class="fw-bold m-0 text-center text-sm">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">{{ $t('home.sec3.card3.cardtit') }}</h6>
                     <p class="text-center text-gray-600 my-1 mb-2">{{ $t('home.sec3.card3.cardpara') }}</p>
@@ -112,16 +112,16 @@
         </section>
         <section class="my-5 img-overlay d-flex justify-content-center align-items-center">
           <div class="d-flex flex-wrap align-items-center col-lg-6 col-md-8 col-10 text-center justify-content-between">
-            <h3 class="fw-semibold col-lg-6 text-white">اتصل واتساب واحجز رحلتك</h3>
-            <button class="btn btn-light col-lg-6 lg:mt-0 mt-3 fw-semibold text-lg"><i class="fa-brands fa-whatsapp me-3 text-success"></i>تواصل معنا</button>
+            <h3 class="fw-semibold col-lg-6 text-white">{{ $t('home.sec4.tit') }}</h3>
+            <button class="btn btn-light col-lg-6 lg:mt-0 mt-3 fw-semibold text-lg"><i class="fa-brands fa-whatsapp me-3 text-success"></i>{{ $t('home.sec4.btn') }}</button>
           </div>
         </section>
         <section class="my-5">
-            <h2 class="fw-semibold main-color text-center">السياحة في اذربيجان</h2>
-            <h6 class="fw-semibold col-6 mx-auto text-center mt-3">هل تملك منك الإرهاق وضغط العمل؟ إذن هيا بنا على بلاد السحر والعراقة جمهورية أذربيجان مزيج التاريخ والغموض ستجده في السياحة في اذربيجان ابدأ بحجز رحلتك سواء من المملكة العربية السعودية أو من الإمارات ودول الخليج.</h6>
+            <h2 class="fw-semibold main-color text-center">{{ $t('home.sec5.tit') }}</h2>
+            <h6 class="fw-semibold col-6 mx-auto text-center mt-3">{{ $t('home.sec5.para') }}</h6>
         </section>
         <section class="my-5">
-            <h1 class="text-5xl font-semibold text-center main-color">عروض اذربيجان</h1>
+            <h1 class="text-5xl font-semibold text-center main-color">{{ $t('home.sec6.tit') }}</h1>
             <div class="d-flex flex-wrap col-10 mx-auto mt-7">
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
@@ -129,10 +129,10 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1280</p>
                         <p class="fw-semibold m-0 text-center">1630</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
-                    <h6 class="text-center">برنامج اذربيجان السياحي 12 يوم 11 ليلة العرض الذهبي❄️</h6>
-                    <p class="text-center text-gray-600 my-3">12 ايام و 11 ليالى</p>
+                    <h6 class="text-center">{{ $t('home.sec6.card1.cardtit') }}</h6>
+                    <p class="text-center text-gray-600 my-3">{{ $t('home.sec6.card1.cardpara') }}</p>
                     <button class="prim-btn rounded-3xl w-10/12 block mx-auto font-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
                     </div>
                 </div>
@@ -142,10 +142,10 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1110</p>
                         <p class="fw-semibold m-0 text-lg font-semibold text-center">1420</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
-                    <h6 class="text-center">برنامج اذربيجان السياحي 10 ايام 9 ليالي العرض الذهبي❄️</h6>
-                    <p class="text-center text-gray-600 my-3">10 ايام و 9 ليالى</p>
+                    <h6 class="text-center">{{ $t('home.sec6.card2.cardtit') }}</h6>
+                    <p class="text-center text-gray-600 my-3">{{ $t('home.sec6.card2.cardpara') }}</p>
                     <button class="prim-btn w-10/12 block mx-auto font-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
                     </div>
                 </div>
@@ -155,16 +155,16 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">940</p>
                         <p class="fw-semibold m-0 text-center">1210</p>
-                        <p class="fw-semibold m-0 text-center text-sm">دولار</p>
+                        <p class="fw-semibold m-0 text-center text-sm">{{ $t('home.money') }}</p>
                     </div>
-                    <h6 class="text-center">برنامج اذربيجان السياحي 8 ايام 7 ليالي العرض الذهبي❄️</h6>
-                    <p class="text-center text-gray-600 my-3">8 ايام و 7 ليالى</p>
+                    <h6 class="text-center">{{ $t('home.sec6.card3.cardtit') }}</h6>
+                    <p class="text-center text-gray-600 my-3">{{ $t('home.sec6.card3.cardpara') }}</p>
                     <button class="prim-btn w-10/12 block mx-auto font-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="mt-5 my-5 position-relative pt-5 d-none d-md-block">
+        <!-- <section class="mt-5 my-5 position-relative pt-5 d-none d-md-block">
             <div class="img-overlay2"></div>
             <h6 class="text-center col-7 position-relative z-10 my-5 mx-auto">نسعي الي نقل السياحة في جورجيا و اذربيجان الي افضل وارقي مستوي بأنسب الاسعار . سياحتكم في امان مع سكاي لاين الاسم الاضمن و الاشهر في مجال السياحة في دولتين جورجيا و اذربيجان</h6>
             <div class="card position-relative z-10 col-10 mx-auto pb-4 d-flex flex-wrap justify-content-lg-between justify-content-center">
@@ -172,7 +172,7 @@
                 <div class="price-overlay">
                     <p class="fw-semibold m-0 text-decoration-line-through text-center">1235</p>
                     <p class="fw-semibold m-0 text-center">1280</p>
-                    <p class="fw-semibold m-0 text-center">دولار</p>
+                    <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                 </div>
                 <div class="d-flex flex-wrap w-full my-lg-2 mt-1">
                     <h6 class=" ms-5 fw-semibold px-2 col-6 text-lg-start text-center">برنامج ❄️ جورجيا السياحي 10 ايام 9 ليالي العرض الذهبي</h6>
@@ -192,7 +192,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1055</p>
                         <p class="fw-semibold m-0 text-center">1050</p>
-                        <p class="fw-semibold m-0 text-center text-sm">دولار</p>
+                        <p class="fw-semibold m-0 text-center text-sm">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">برنامج ❄️ جورجيا السياحي 8 ايام 7 ليالي العرض الذهبي</h6>
                     <p class="text-center my-1 mb-2">8 ايام و 7 ليالى</p>
@@ -205,7 +205,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1485</p>
                         <p class="fw-semibold m-0 text-center">1590</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">برنامج ❄️ جورجيا السياحي 12 يوم 11 ليلة العرض الذهبي</h6>
                     <p class="text-center my-1 mb-2">12 ايام و 11 ليالى</p>
@@ -218,7 +218,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-center text-decoration-line-through">1280</p>
                         <p class="fw-semibold m-0 text-center">1630</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">برنامج اذربيجان السياحي 12 يوم 11 ليلة العرض الذهبي❄️</h6>
                     <p class="text-center my-1 mb-2">12 ايام و 11 ليالى</p>
@@ -231,7 +231,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-center text-decoration-line-through">1110</p>
                         <p class="fw-semibold m-0 text-center">1420</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">برنامج اذربيجان السياحي 10 ايام 9 ليالي العرض الذهبي❄️</h6>
                     <p class="text-center my-1 mb-2">10 ايام و 9 ليالى</p>
@@ -244,7 +244,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-center text-decoration-line-through">940</p>
                         <p class="fw-semibold m-0 text-center">1210</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">برنامج اذربيجان السياحي 8 ايام 7 ليالي العرض الذهبي❄️</h6>
                     <p class="text-center my-1 mb-2">8 ايام و 7 ليالى</p>
@@ -263,7 +263,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1235</p>
                         <p class="fw-semibold m-0 text-center">1280</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
                     <h2 class="card-title">برنامج ❄️ جورجيا السياحي 10 ايام 9 ليالي العرض الذهبي</h2>
                     <p class="text-center text-gray-600 my-3">10 ايام و 9 ليالى</p>
@@ -276,7 +276,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1055</p>
                         <p class="fw-semibold m-0 text-center">1050</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">برنامج ❄️ جورجيا السياحي 8 ايام 7 ليالي العرض الذهبي</h6>
                     <p class="text-center my-1 mb-2">8 ايام و 7 ليالى</p>
@@ -289,7 +289,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1485</p>
                         <p class="fw-semibold m-0 text-center">1590</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">برنامج ❄️ جورجيا السياحي 12 يوم 11 ليلة العرض الذهبي</h6>
                     <p class="text-center my-1 mb-2">12 ايام و 11 ليالى</p>
@@ -302,7 +302,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1280</p>
                         <p class="fw-semibold m-0 text-center">1630</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">برنامج اذربيجان السياحي 12 يوم 11 ليلة العرض الذهبي❄️</h6>
                     <p class="text-center my-1 mb-2">12 ايام و 11 ليالى</p>
@@ -315,7 +315,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1110</p>
                         <p class="fw-semibold m-0 text-center">1420</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">برنامج اذربيجان السياحي 10 ايام 9 ليالي العرض الذهبي❄️</h6>
                     <p class="text-center my-1 mb-2">10 ايام و 9 ليالى</p>
@@ -328,7 +328,7 @@
                     <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">940</p>
                         <p class="fw-semibold m-0 text-center">1210</p>
-                        <p class="fw-semibold m-0 text-center">دولار</p>
+                        <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div>
                     <h6 class="text-center">برنامج اذربيجان السياحي 8 ايام 7 ليالي العرض الذهبي❄️</h6>
                     <p class="text-center my-1 mb-2">8 ايام و 7 ليالى</p>
@@ -336,7 +336,7 @@
                 </div>
                 </swiper-slide>
             </swiper>
-        </section>
+        </section> -->
         <!-- <div class="apps-section py-5">
             <div class="container">
                 <div class="heading-text">
@@ -389,7 +389,7 @@
                 </form>
             </div>
         </div> -->
-        <div class="services-section py-5">
+        <!-- <div class="services-section py-5">
             <div class="container">
                 <div class="heading-text">
                     <h1>{{ $t('services.heading') }}</h1>
@@ -431,7 +431,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- <div class="offers-section position-relative py-5">
             <img class="position-absolute" src="/images/sales.png" alt="" />
             <div class="container">
@@ -447,15 +447,47 @@
                 <OffersPopup :openPopup="offersPopup" @close-offersPopup="() => offersPopup = false"></OffersPopup>
             </div>
         </div> -->
+        <section class="border-bottom border-black my-5">
+            <div class="col-10 mx-auto my-5">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="text-center col-lg-3 col-md-6 mt-3" v-for="(item, index) in $tm('serviciesCards')" :key="index">
+                        <div class="circle-shadow-o" v-if="index == 0"><i class="fa-solid fa-shield text-white fs-1"></i></div>
+                        <div class="circle-shadow-b" v-else-if="index == 1"><i class="fa-solid fa-hotel text-white fs-1"></i></div>
+                        <div class="circle-shadow-o" v-else-if="index == 2"><i class="fa-solid fa-car-side text-white fs-1"></i></div>
+                        <div class="circle-shadow-b" v-else><i class="fa-sharp fa-solid fa-train text-white fs-1"></i></div>
+                        <router-link v-if="!item.link.includes('http')" class="fw-bold"
+                        :to="`/${$i18n.locale}/${item.link}`">
+                            <h3 class="text-2xl mt-5 ">{{item.heading }}</h3>
+                        </router-link>
+                        <a v-if="item.link.includes('http')" target="_blank" class="fw-bold"
+                        :href="item.link">
+                            <h3 class="text-2xl mt-5 ">{{item.heading }}</h3>
+                        </a>
+                    </div>
+                    <!-- <div class="text-center col-lg-3 col-md-6 mt-3">
+                    <div class="circle-shadow-b"><i class="fa-solid fa-hotel text-white fs-1"></i></div>
+                    <a href=""><h3 class="text-2xl mt-5 ">{{ $t('serviciesCards[1].heading') }}</h3></a>
+                    </div>
+                    <div class="text-center col-lg-3 col-md-6 mt-3">
+                    <div class="circle-shadow-o"><i class="fa-solid fa-car-side text-white fs-1"></i></div>
+                    <a href=""><h3 class="text-2xl mt-5 ">{{ $t('serviciesCards[2].heading') }}</h3></a>
+                    </div>
+                    <div class="text-center col-lg-3 col-md-6 mt-3">
+                    <div class="circle-shadow-b"><i class="fa-sharp fa-solid fa-train text-white fs-1"></i></div>
+                    <a href=""><h3 class="text-2xl mt-5 ">{{ $t('serviciesCards[3].heading') }}</h3></a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
         <Loader v-if="loading"></Loader>
         <section class="bg-main-color py-5 d-flex justify-content-center align-items-center mb-5">
             <div class="d-flex flex-wrap col-10 justify-content-between">
-                <h3 class="fw-bold col-md-6 text-center text-white">من اراء عملائنا</h3>
-                <button class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold"><i class="fa-solid fa-comments me-5"></i>استكشف اراء العملاء السابقين</button>
+                <h3 class="fw-bold col-md-6 text-center text-white">{{ $t('home.sec7.tit') }}</h3>
+                <button class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold"><i class="fa-solid fa-comments me-5"></i>{{ $t('home.sec7.btn') }}</button>
             </div>
         </section>
         <section class="my-10">
-            <swiper :modules="modules" :slides-per-view="numOfImage" :loop="true" :autoplay="{delay:2500,diableOnInteraction:false,pauseOnMouseEnter:true}"  :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange" class=" px-5 d-flex justify-content-center">
+            <swiper :modules="modules" :slides-per-view="numOfImage" :loop="true" :autoplay="{delay:1000,diableOnInteraction:false,pauseOnMouseEnter:true}"  :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange" class=" px-5 d-flex justify-content-center">
                 <swiper-slide><img src="../assets/Images/image1.png" class="w-100" alt=""></swiper-slide>
                 <swiper-slide><img src="../assets/Images/image2.png" class="w-100" alt=""></swiper-slide>
                 <swiper-slide><img src="../assets/Images/image3.png" class="w-100" alt=""></swiper-slide>
@@ -469,50 +501,27 @@
         </section>
         <section class="bg-main-color py-5 d-flex justify-content-center align-items-center my-5">
             <div class="d-flex flex-wrap col-10 justify-content-md-between justify-center align-items-center">
-                <h3 class="fw-bold col-md-6 text-center text-white">انشئ رحلتك بسعر مناسب</h3>
-                <button class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold">انشئ رحلتك الان</button>
+                <h3 class="fw-bold col-md-6 text-center text-white">{{ $t('home.sec8.tit') }}</h3>
+                <button class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold">{{ $t('home.sec8.btn') }}</button>
             </div>
-        </section>
-        <section class="border-bottom border-black my-5">
-            <div class="col-10 mx-auto my-5">
-            <div class="d-flex flex-wrap justify-content-between">
-                <div class="text-center col-lg-3 col-md-6 mt-3">
-                <div class="circle-shadow-o"><i class="fa-solid fa-shield text-white fs-1"></i></div>
-                <h3 class="text-2xl mt-5 ">وسائل دفع أمنة</h3>
-                </div>
-                <div class="text-center col-lg-3 col-md-6 mt-3">
-                <div class="circle-shadow-b"><i class="fa-regular fa-map text-white fs-1"></i></div>
-                <h3 class="text-2xl mt-5 ">اختار مكانك المفضل</h3>
-                </div>
-                <div class="text-center col-lg-3 col-md-6 mt-3">
-                <div class="circle-shadow-o"><i class="fa-solid fa-hotel text-white fs-1"></i></div>
-                <h3 class="text-2xl mt-5 ">افضل الفنادق</h3>
-                </div>
-                <div class="text-center col-lg-3 col-md-6 mt-3">
-                <div class="circle-shadow-b"><i class="fa-solid fa-plane text-white fs-1"></i></div>
-                <h3 class="text-2xl mt-5 ">رحلات منظمة وأمنة</h3>
-                </div>
-            </div>
-            </div>
-        </section>
+        </section>  
         <section class="d-flex flex-wrap col-10 mx-auto justify-content-lg-between justify-center">
             <div class="col-lg-4 col-md-6 text-center">
                 <i class="fa-solid fa-phone main-color contact-sec fs-2"></i>
-                <h3 class="text-2xl font-bold my-5 text-gray-800">خدمة عملاء أذربيجان</h3>
-                <h4><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">994557896357+</span></h4>
+                <h3 class="text-2xl font-bold my-5 text-gray-800">{{ $t('home.sec9.azra.tit') }}</h3>
+                <h4><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">{{ $t('home.sec9.azra.tel') }}</span></h4>
             </div>
             <div class="col-lg-4 col-md-6 text-center">
                 <i class="fa-solid fa-phone main-color contact-sec fs-2"></i>
-                <h3 class="text-2xl font-bold my-5 text-gray-800">خدمة عملاء جورجيا</h3>
-                <h4 class="mb-2"><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold">995555550806+</span></h4>
-                <h4 class="mb-2"><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">995555550859+</span></h4>
-                <h4 class="mb-2"><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">995555550871+</span></h4>
-                <h4 class="mb-2"><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">995555550872+</span></h4>
+                <h3 class="text-2xl font-bold my-5 text-gray-800">{{ $t('home.sec9.gorg.tit') }}</h3>
+                <template v-for="item,index in $tm('home.sec9.gorg.tel')" :key="index">
+                    <h4 class="mb-2"><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold">{{ item }}</span></h4>
+                </template>
             </div>
             <div class="col-lg-4 col-md-6 text-center">
                 <i class="fa-solid fa-phone main-color contact-sec fs-2"></i>
-                <h3 class="text-2xl font-bold my-5 text-gray-800">خدمة عملاء السعودية</h3>
-                <h4><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">966535083575+</span></h4>
+                <h3 class="text-2xl font-bold my-5 text-gray-800">{{ $t('home.sec9.sud.tit') }}</h3>
+                <h4><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">{{ $t('home.sec9.sud.tel') }}</span></h4>
             </div>
         </section>
         <FooterComp></FooterComp>
@@ -524,7 +533,7 @@ import FooterComp from "../components/FooterComp.vue";
 // import AboutPopUp from "../components/AboutPopUp.vue";
 import OffersPopup from "../components/OffersPopup.vue";
 import NewPopup from "../components/NewPopup.vue";
-import { ref, watch, onMounted } from "vue";
+import { ref, watch, onMounted, inject } from "vue";
 import axios from "axios";
 import i18n from "../i18n";
 import { Carousel, Slide } from 'vue3-carousel'
@@ -543,7 +552,6 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const modules = ref([Autoplay, Pagination, Navigation]);
-
 
 const slider = ref([]);
 const images = ref([]);
@@ -770,8 +778,9 @@ onMounted(async () => {
 }
 .img-overlay{
     height: 300px;
-  background: url('../assets/Images/bg1.jpg') no-repeat center;
-  background-size: 100% 100%;
+//   background: url('../assets/Images/bg1.jpg') no-repeat center;
+//   background-size: 100% 100%;
+background: #FD820E;
 }
 .price-overlay{
 //   @apply w-[100px] h-[100px] absolute top-[250px] rounded-full right-4 border-4 border-warning bg-white pt-2

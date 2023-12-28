@@ -61,87 +61,68 @@
     </header> -->
     <header class="w-full d-flex flex-wrap">   
         <div class="min-h-60 w-100 bg-gray-200 d-sm-block d-none">
-            <div class="container mx-auto d-flex flex-wrap gap-lg-1 justify-content-between align-items-center h-100 pt-3">
-                <div class="d-flex col-lg col-md-6 gap-1 align-items-center mb-3">
+            <div class="col-10 mx-auto d-flex flex-wrap justify-content-between align-items-center h-100 pt-3">
+                <div class="d-flex gap-1 align-items-center mb-3">
                     <i class="fa-solid fa-calendar main-color"></i>
-                    <span class="me-3 ms-2 fs-6">{{$t('header.date')}}</span>
-                    <span class="main-color">{{ $t('header.news') }}</span>
+                    <span class="me-3 fs-6">{{$t('header.date')}}</span>
                 </div>
-                <marquee direction="right" class="mb-3 col-lg col-md-6 overflow-hidden my-md-0 my-3">
+                <marquee :direction="$i18n.locale === 'en' ? 'left' : 'right'" behavior="scroll" scrollamount="8" class="mb-3 col-lg-6 col-md-6">
                     {{$t('header.marqueePara')}}
                 </marquee>
-                <div class="d-flex col-lg col-md-6 gap-1 align-items-center mb-3">
-                    <div class="d-flex align-items-center bg-white px-2 py-1 rounded-3">
-                        <i class="fa-solid fa-sun main-color"></i>
-                        <span class="mx-1 fs-6">7.84 C</span>
-                        <span class="fs-6">Tbilis</span>
-                    </div>
-                    <router-link :to="`/${$i18n.locale}/client-login`" class="bg-main-color text-white px-2 p-1 rounded-3 d-flex align-items-center ms-3">
+                <div class="d-flex col-lg-3 col-md-6 gap-1 align-items-center mb-3">
+                    <router-link :to="`/${$i18n.locale}/client-login`" class="bg-main-color text-white px-2 p-1 rounded-3 d-flex align-items-center me-3">
                         <i class="fa-solid fa-user fs-6 ms-1"></i>
                         <span class="ms-2">{{$t('header.login')}}</span>
                     </router-link>
-                    <span class="lang fw-bold d-flex align-items-center gap-2" @click="changeLang">
+                    <span class="lang btn btn-light fw-bold d-flex align-items-center gap-2 me-2" @click="changeLang">
                         <i class="fa-solid fa-globe fs-4"></i>
                         {{ $i18n.locale === 'en' ? 'AR' : 'EN' }}
                     </span>
                 </div>
             </div>
         </div>
-        <div class="h-[250px] w-full overflow-hidden relative" v-if="isRouteActive('/ar') || isRouteActive('/en')">
-            <img src="../assets/Images/W8A7cfSFFqkctjTCafzWsZHM0Dd1Zz-meta2LPZg9in2Ykg2YTYp9mK2YYuanBn-.jpg" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100">
+        <div class="h-[250px] w-100 overflow-hidden relative" v-if="isRouteActive('/ar') || isRouteActive('/en')">
+            <swiper :modules="modules" :slides-per-view="1" :loop="true" :autoplay="{delay:1000,diableOnInteraction:false,pauseOnMouseEnter:true}"  :space-between="0" @swiper="onSwiper" @slideChange="onSlideChange" class="w-100 d-flex justify-content-center">
+                <swiper-slide><img src="../assets/Images/W8A7cfSFFqkctjTCafzWsZHM0Dd1Zz-meta2LPZg9in2Ykg2YTYp9mK2YYuanBn-.jpg" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
+                <swiper-slide><img src="../assets/Images/W8A7cfSFFqkctjTCafzWsZHM0Dd1Zz-meta2LPZg9in2Ykg2YTYp9mK2YYuanBn-.jpg" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
+                <swiper-slide><img src="../assets/Images/W8A7cfSFFqkctjTCafzWsZHM0Dd1Zz-meta2LPZg9in2Ykg2YTYp9mK2YYuanBn-.jpg" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
+            </swiper>
+            
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 order-first order-sm-0">
             <div class="container">
-                <a class="navbar-brand me-0 me-md-auto ms-4" href="#"><img :src="`https://seasonreal.seasonsge.com/${info.logo}`" alt="" height="60"></a>
+                <router-link class="navbar-brand me-0 me-md-auto ms-4" :to="`/${$i18n.locale}`"><img src="../assets/Images/sky-logo.png" alt="" height="60"></router-link>
                 <button class="navbar-toggler order-md-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item position-relativerelative">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house ms-2"></i>{{$t('header.links.li1')}}</a>
+                        <li class="nav-item position-relative">
+                        <router-link :to="`/${$i18n.locale}`" class="nav-link fw-semibold" aria-current="page" :class="{'active' : isRouteActive('/ar') || isRouteActive('/en')}"><i class="fa-solid fa-house ms-2"></i>{{$t('header.links.li1')}}</router-link>
                         </li>
-                        <li class="nav-item dropdown position-relative">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-globe ms-2"></i>{{ $t('header.links.li2.name') }}
-                            </a>
-                            <ul class="dropdown-menu text-end">
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-map ms-1"></i>{{ $t('header.links.li2.sublinks[0]') }}</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-map ms-1"></i>{{ $t('header.links.li2.sublinks[1]') }}</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown position-relative">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- <li class="nav-item position-relative">
+                            <a class="nav-link" href="#">
                                 <i class="fa-solid fa-info ms-2"></i>{{ $t('header.links.li3.name') }}
                             </a>
-                            <ul class="dropdown-menu text-end">
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-info ms-1"></i> {{ $t('header.links.li3.sublinks[0]') }}</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-phone ms-1"></i> {{ $t('header.links.li3.sublinks[1]') }}</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-sheet-plastic ms-1"></i> {{ $t('header.links.li3.sublinks[2]') }}</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown position-relative">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-info ms-2"></i>{{ $t('header.links.li4.name') }}
+                        </li> -->
+                        <template v-for="(item, index) in $tm('serviciesCards')" :key="index">
+                            <li class="nav-item position-relative">
+                            <router-link v-if="!item.link.includes('http')" class="nav-link fw-semibold" :to="`/${$i18n.locale}/${item.link}`" :class="{'active' : isRouteActive(`/ar/${item.link}`) ||isRouteActive(`/en/${item.link}`)}">
+                                <i class="fa-solid fa-shield ms-2" v-if="index == 0"></i>
+                                <i class="fa-solid fa-hotel ms-2" v-else-if="index == 1"></i>
+                                <i class="fa-solid fa-car-side ms-2" v-else-if="index == 2"></i>
+                                <i class="fa-sharp fa-solid fa-train ms-2" v-else></i>
+                                {{ item.heading }}
+                            </router-link>
+                            <a v-if="item.link.includes('http')" target="_blank" class="fw-bold nav-link"
+                            :href="item.link">
+                                <i class="fa-sharp fa-solid fa-train ms-2"></i>
+                                {{ item.heading }}
                             </a>
-                            <ul class="dropdown-menu text-end">
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-map ms-1"></i> {{ $t('header.links.li4.sublinks[0]') }}</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-map ms-1"></i>{{ $t('header.links.li4.sublinks[1]') }}</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-map ms-1"></i>{{ $t('header.links.li4.sublinks[2]') }}</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item position-relative">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-plane ms-2"></i>{{ $t('header.links.li5') }}</a>
-                        </li>
-                        <li class="nav-item position-relative">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-comments ms-2"></i>{{ $t('header.links.li6') }}</a>
-                        </li>
-                        <li class="nav-item position-relative">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-dollar-sign ms-2"></i>{{ $t('header.links.li7') }}</a>
-                        </li>
+                            </li>
+                        </template>
                     </ul>
                 </div>
-                <i class="fa-solid fa-cart-shopping fs-3 main-color order my-md-4"></i>
             </div>
         </nav>
         <!-- <div class="min-h-[70px] w-full shadow-md lg:order-none order-first">
@@ -201,6 +182,17 @@ import { ref, onMounted } from 'vue';
 import { useRouter, useRoute } from 'vue-router'
 import axios from 'axios'
 import i18n from '../i18n'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+// import 'path-to-your-style/style.css'; // replace with the correct path
+
+// Import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+const modules = ref([Autoplay, Pagination, Navigation]);
+
 
 const router = useRouter()
 const openMenu = ref(false)
@@ -218,6 +210,7 @@ const changeLang = async () => {
         localStorage.setItem('lang', i18n.global.locale.value)
         try {
             await router.replace({ params: { lang: i18n.global.locale.value } })
+            location.reload();
         } catch (error) {
             router.push('/')
         }
@@ -228,6 +221,7 @@ const changeLang = async () => {
         // this is very important code for changing the fuckin value in the URL 
         try {
             await router.replace({ params: { lang: i18n.global.locale.value } })
+            location.reload();
         } catch (error) {
             router.push('/')
         }

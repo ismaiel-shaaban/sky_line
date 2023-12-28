@@ -24,6 +24,7 @@
         }
     },
     "home": {
+      "money": "dolar",
       "sec1": {
         "tit": "Skyline Tourism Company",
         "para": "Skyline Tourism Company in Azerbaijan and Georgia, the most luxurious, suitable, and trusted name for Arab families and Arab travelers."
@@ -49,7 +50,66 @@
           "cardpara": "12 days and 11 nights",
           "cardbtn": "Inquire and Book on WhatsApp"
         }
+      },
+      "sec4": {
+        "tit": "Contact on WhatsApp and Book Your Trip",
+        "btn": "Contact Us"
+      },
+      "sec5": {
+        "tit": "Tourism in Azerbaijan",
+        "para": "Do you suffer from fatigue and work pressure? Then come with us to the land of charm and antiquity, the Republic of Azerbaijan, a blend of history and mystery. You will find it in tourism in Azerbaijan. Start booking your trip, whether from Saudi Arabia or from the Emirates and Gulf countries."
+      },
+      "sec6": {
+        "tit": "Azerbaijan Offers",
+        "card1": {
+          "cardtit": "Azerbaijan Tour Program 12 Days 11 Nights The Golden Offer ❄️",
+          "cardpara": "12 days and 11 nights",
+          "cardbtn": "Inquire and Book on WhatsApp"
+        },
+        "card2": {
+          "cardtit": "Azerbaijan Tour Program 10 Days 9 Nights The Golden Offer ❄️",
+          "cardpara": "10 days and 9 nights",
+          "cardbtn": "Inquire and Book on WhatsApp"
+        },
+        "card3": {
+          "cardtit": "Azerbaijan Tour Program 8 Days 7 Nights The Golden Offer ❄️",
+          "cardpara": "8 days and 7 nights",
+          "cardbtn": "Inquire and Book on WhatsApp"
+        }
+      },
+      "sec7": {
+        "tit": "From Our Customers' Reviews",
+        "btn": "Explore Previous Customer Reviews"
+      },
+      "sec8": {
+        "tit": "Create Your Trip at an Affordable Price",
+        "btn": "Create Your Trip Now"
+      },
+      "sec9": {
+        "azra": {
+          "tit": "Azerbaijan Customer Service",
+          "tel": "+994557896357"
+        },
+        "gorg": {
+          "tit": "Georgia Customer Service",
+          "tel": ["+995555550806", "+995555550859", "+995555550871", "+995555550872"]
+        },
+        "sud": {
+          "tit": "Saudi Arabia Customer Service",
+          "tel": "+966535083575"
+        }
       }
+    },
+    "footer": {
+      "address": {
+        "tit": "Address",
+        "details": "Our offices in Mecca, Riyadh, Georgia, and Azerbaijan",
+        "tel": "+966535083575",
+        "email": "info@skylinegeorgia.com"
+      },
+      "linksTit": "Quick Links",
+      "links": ["Home", "Tour Programs", "Terms and Conditions", "Contact Us", "Articles"],
+      "para": "All rights reserved"
     },
     "headerLinks": [
         "home",
