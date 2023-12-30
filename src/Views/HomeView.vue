@@ -502,7 +502,7 @@
         <section class="bg-main-color py-5 d-flex justify-content-center align-items-center my-5">
             <div class="d-flex flex-wrap col-10 justify-content-md-between justify-center align-items-center">
                 <h3 class="fw-bold col-md-6 text-center text-white">{{ $t('home.sec8.tit') }}</h3>
-                <button @click="scrollToDiv" class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold" >{{ $t('home.sec8.btn') }}</button>
+                <router-link :to="`/${$i18n.locale}/createJourney`" class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold" >{{ $t('home.sec8.btn') }}</router-link>
             </div>
         </section>  
         <section class="d-flex flex-wrap col-10 mx-auto justify-content-lg-between justify-center">
@@ -642,7 +642,7 @@ const search = async () => {
                                 })
                             } else if (data.data.type == 1) {
                                 router.push({
-                                    name: 'Agents Hotels Checkout',
+                                    name: 'A    gents Hotels Checkout',
                                     params: { lang: i18n.global.locale.value, id: HotelsBooking.code, with: 2}
                                 })
                             }

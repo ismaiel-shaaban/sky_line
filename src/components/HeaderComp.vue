@@ -61,15 +61,19 @@
     </header> -->
     <header class="w-full d-flex flex-wrap">   
         <div class="min-h-60 w-100 bg-gray-200 d-sm-block d-none">
-            <div class="col-10 mx-auto d-flex flex-wrap justify-content-between align-items-center h-100 pt-3">
+            <div class="col-11 mx-auto d-flex flex-wrap justify-content-between align-items-center h-100 pt-3">
                 <div class="d-flex gap-1 align-items-center mb-3">
                     <i class="fa-solid fa-calendar main-color"></i>
-                    <span class="me-3 fs-6">{{$t('header.date')}}</span>
+                    <span class="me-3 fs-6">{{ $t(`date.days[${currentDay}]`) }} , {{ currentNumOfDay }} {{ $t(`date.months[${currentMonth}]`) }} , {{ currentYear }}</span>
                 </div>
-                <marquee :direction="$i18n.locale === 'en' ? 'left' : 'right'" behavior="scroll" scrollamount="8" class="mb-3 col-lg-6 col-md-6">
+                <marquee :direction="$i18n.locale === 'en' ? 'left' : 'right'" behavior="scroll" scrollamount="8" class="mb-3 col-lg-5 col-md-6">
                     {{$t('header.marqueePara')}}
                 </marquee>
-                <div class="d-flex col-lg-3 col-md-6 gap-1 align-items-center mb-3">
+                <div class="d-flex col-lg-4 col-md-6 gap-1 align-items-center mb-3">
+                    <span class="bg-light text-black px-2 p-1 rounded-3 d-flex align-items-center me-3">
+                        <i class="fa-solid fa-sun ms-1 main-color"></i>
+                        <span class="ms-2">{{ temp }} C</span>
+                    </span>
                     <router-link :to="`/${$i18n.locale}/client-login`" class="bg-main-color text-white px-2 p-1 rounded-3 d-flex align-items-center me-3">
                         <i class="fa-solid fa-user fs-6 ms-1"></i>
                         <span class="ms-2">{{$t('header.login')}}</span>
@@ -228,6 +232,30 @@ const changeLang = async () => {
     }
 }
 
+// -------
+const currentDay = ref(null);
+const currentNumOfDay = ref(null);
+const currentMonth = ref(null);
+const currentYear = ref(null);
+// const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+// const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+onMounted(() => {
+  const currentDate = new Date();
+  const dayOfWeek = currentDate.getDay();
+  currentDay.value = dayOfWeek;
+  currentNumOfDay.value = currentDate.getDate();
+  const month = currentDate.getMonth();
+  currentMonth.value = month;
+  currentYear.value = currentDate.getFullYear();
+});
+const temp = ref(0);
+onMounted(()=>{
+    axios.get('https://api.openweathermap.org/data/2.5/weather?q=Georgia&appid=dcc4737f9298c257d7f2332af3149f53').then((res)=>{
+        temp.value = (res.data.main.temp)-273.15;
+        temp.value = temp.value.toFixed(2);
+    }).catch(err=>console.log(err))
+})
+// --------
 const logOut = () => {
     localStorage.clear()
     // router.push({

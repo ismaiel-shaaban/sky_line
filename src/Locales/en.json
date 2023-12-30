@@ -1,4 +1,8 @@
 {
+    "date":{
+        "months":["January","February","March","April","May","June","July","August","September","October","November","December"],
+        "days":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    },
     "header": {
         "marqueePara": "Halal Restaurants in Georgia: Top 10 Halal Restaurants in Georgia for 2022 - Georgia Weather... Choose the Best Times to Visit - Does Georgia Require a Visa? ... Georgia Visa for Arabs - Travel from Saudi Arabia to Georgia - Everything You Need to Know - 10 Important Tips Before Traveling to Georgia - Emergency Numbers in Georgia – You'll Need Them for Tourism - Medical Tourism in Georgia - Famous Places and Resorts - 10 Tourist Places in Georgia... Not Yet Visited by Arab Travelers - Tourism in Tbilisi and the Top 18 Places Worth Visiting - Tourism in Batumi and the Top 14 Places Worth Visiting",
         "date": "Sat, 23 December, 2023",
@@ -134,7 +138,7 @@
         "paragraph": "You can search for your reservation with your 20-character reservation code"
     },
     "services": {
-        "heading": "Our Services",
+        "heading": "Create Your Journey",
         "paragraph": "We offer you travel services in order to facilitate everything on your trip and provide full fun. Only you have to decide and we have to meet"
     },
     "serviciesCards": [
