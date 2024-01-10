@@ -95,7 +95,12 @@
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 order-first order-sm-0">
             <div class="container">
+                
                 <router-link class="navbar-brand me-0 me-md-auto ms-4" :to="`/${$i18n.locale}`"><img src="../assets/Images/sky-logo.png" alt="" height="60"></router-link>
+                <span class="lang btn btn-dark me-auto fw-bold d-flex align-items-center gap-2 ms-3 d-sm-none d-block" @click="changeLang">
+                    <i class="fa-solid fa-globe fs-4"></i>
+                    {{ $i18n.locale === 'en' ? 'AR' : 'EN' }}
+                </span>
                 <button class="navbar-toggler order-md-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>

@@ -1,6 +1,6 @@
 <template>
     <div class="home-page">
-        <NewPopup :info="info" :openPopup="newPopup" @close-newPopup="() => (newPopup = false)"></NewPopup>
+        <!-- <NewPopup :info="info" :openPopup="newPopup" @close-newPopup="() => (newPopup = false)"></NewPopup> -->
         <HeaderComp class=" top-0 bg-white w-100" style="z-index: 555"></HeaderComp>
         <!-- <div class="landing min-vh-100">
             <Carousel class="min-vh-100 m-0 position-relative" :autoplay="3000" :wrap-around="true"
@@ -449,18 +449,20 @@
         </div> -->
         <section ref="targetDiv" class="border-bottom border-black my-5" id="createDiv">
             <div class="col-10 mx-auto my-5">
-                <div class="d-flex flex-wrap justify-content-between">
-                    <div class="text-center col-lg-3 col-md-6 mt-3" v-for="(item, index) in $tm('serviciesCards')" :key="index">
+                <div class="d-flex flex-wrap md:justify-content-between justify-content-center">
+                    <div class="text-center col-lg-3 col-md-6 mx-auto mt-3" v-for="(item, index) in $tm('serviciesCards')" :key="index">
                         <router-link v-if="!item.link.includes('http')" class="fw-bold text-decoration-none"
                         :to="`/${$i18n.locale}/${item.link}`">
-                            <div class="circle-shadow-o" v-if="index == 0"><i class="fa-solid fa-shield text-white fs-1"></i></div>
-                            <div class="circle-shadow-b" v-else-if="index == 1"><i class="fa-solid fa-hotel text-white fs-1"></i></div>
-                            <div class="circle-shadow-o" v-else-if="index == 2"><i class="fa-solid fa-car-side text-white fs-1"></i></div>
+                            <div class="circle-shadow-o" v-if="index == 0">
+                                <!-- <i class="fa-solid fa-shield text-white fs-1"></i> -->
+                                <i class="fa-solid fa-earth-americas fa-spin text-white fs-1"></i></div>
+                            <div class="circle-shadow-b" v-else-if="index == 1"><i class="fa-solid fa-hotel text-white fs-1 fa-rotate fa-fade"></i></div>
+                            <div class="circle-shadow-o" v-else-if="index == 2"><i class="fa-solid fa-car-side text-white fs-1 car"></i></div>
                             <h3 class="text-2xl mt-5 fw-bold text-decoration-underline">{{item.heading }}</h3>
                         </router-link>
                         <a v-if="item.link.includes('http')" target="_blank" class="fw-bold"
                         :href="item.link">
-                            <div class="circle-shadow-b"><i class="fa-sharp fa-solid fa-train text-white fs-1"></i></div>
+                            <div class="circle-shadow-b"><i class="fa-sharp fa-solid fa-train text-white fs-1 train"></i></div>
                             <h3 class="text-2xl mt-5 fw-bold">{{item.heading }}</h3>
                         </a>
                     </div>
@@ -481,7 +483,7 @@
         </section>
         <Loader v-if="loading"></Loader>
         <section class="bg-main-color py-5 d-flex justify-content-center align-items-center mb-5">
-            <div class="d-flex flex-wrap col-10 justify-content-between">
+            <div class="d-flex flex-wrap col-10 justify-content-md-between justify-content-center">
                 <h3 class="fw-bold col-md-6 text-center text-white">{{ $t('home.sec7.tit') }}</h3>
                 <button class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold"><i class="fa-solid fa-comments me-5"></i>{{ $t('home.sec7.btn') }}</button>
             </div>
@@ -500,12 +502,12 @@
             </swiper>
         </section>
         <section class="bg-main-color py-5 d-flex justify-content-center align-items-center my-5">
-            <div class="d-flex flex-wrap col-10 justify-content-md-between justify-center align-items-center">
+            <div class="d-flex flex-wrap col-10 justify-content-md-between justify-content-center align-items-center">
                 <h3 class="fw-bold col-md-6 text-center text-white">{{ $t('home.sec8.tit') }}</h3>
                 <router-link :to="`/${$i18n.locale}/createJourney`" class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold" >{{ $t('home.sec8.btn') }}</router-link>
             </div>
         </section>  
-        <section class="d-flex flex-wrap col-10 mx-auto justify-content-lg-between justify-center">
+        <section class="d-flex flex-wrap col-10 mx-auto justify-content-lg-between justify-content-center">
             <div class="col-lg-4 col-md-6 text-center">
                 <i class="fa-solid fa-phone main-color contact-sec fs-2"></i>
                 <h3 class="text-2xl font-bold my-5 text-gray-800">{{ $t('home.sec9.azra.tit') }}</h3>
@@ -716,6 +718,33 @@ onMounted(async () => {
 </script>
 
 <style lang="scss" scoped>
+@keyframes CarAnimation {
+    from{
+        left: 5px;
+    }
+    to{
+        right: 5px;
+    }
+}
+@keyframes TrainAnimation {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.car{
+    left: 5px;
+    position: relative;
+    animation: CarAnimation 2s infinite ;
+    transition: 0.5s;
+}
+.train{
+    position: relative;
+    animation: TrainAnimation 2s infinite ;
+    transition: 0.5s;
+}
 .bg-main-color{
     background: #FD820E;
 }
