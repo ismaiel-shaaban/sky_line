@@ -735,10 +735,12 @@ onMounted(async () => {
     }
 }
 .car{
-    left: 5px;
     position: relative;
     animation: CarAnimation 2s infinite ;
     transition: 0.5s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
 }
 .train{
     position: relative;
