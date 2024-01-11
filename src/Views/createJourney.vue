@@ -171,7 +171,7 @@ onMounted(async () => {
         .then((data) => {
             info.value = data.data[0]
             localStorage.setItem('websiteInfo', JSON.stringify( info.value))
-            document.getElementById("favicon").href = `https://seasonreal.seasonsge.com/${data.data[0].favicon}`;
+          
         })
     setTimeout(() => {
         newPopup.value = true;
