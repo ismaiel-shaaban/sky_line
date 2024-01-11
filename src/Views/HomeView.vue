@@ -443,7 +443,7 @@
         </div>
       </section>
       <section class="d-flex flex-wrap col-10 mx-auto my-5">
-        <div class="col-lg-4 col-md-6">
+        <!-- <div class="col-lg-4 col-md-6">
           <h3 class="text-3xl font-semibold main-color">
             {{ $t("footer.address.tit") }}
           </h3>
@@ -452,13 +452,13 @@
           </h5>
           <h5 class="fw-semibold my-2">{{ $t("footer.address.tel") }}</h5>
           <h5 class="fw-semibold my-2">{{ $t("footer.address.email") }}</h5>
-        </div>
+        </div> -->
       
         <div class="col-lg-4 col-md-6 text-center">
-          <!-- <h3 class="text-2xl font-bold main-color mb-4 text-gray-800">
+          <h3 class="text-2xl font-bold main-color mb-4 text-gray-800">
             {{ $t("home.sec9.gorg.tit") }}
-          </h3> -->
-          <!-- <template
+          </h3>
+          <template
             v-for="(item, index) in $tm('home.sec9.gorg.tel')"
             :key="index"
           >
@@ -466,7 +466,7 @@
               <i class="fa-solid fa-phone main-color ms-3"></i
               ><span class="text-xl font-semibold">{{ item }}</span>
             </h4>
-          </template> -->
+          </template>
         </div>
       </section>
       <section class="bg-main-color py-2 text-center">
