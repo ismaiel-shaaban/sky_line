@@ -456,7 +456,7 @@
       
         <div class="col-lg-4 col-md-6 text-center">
           <h3 class="text-2xl font-bold main-color mb-4 text-gray-800">
-          خدمة العملاء
+            {{ $t("home.sec9.gorg.tit") }}
           </h3>
           <!-- <template
             v-for="(item, index) in $tm('home.sec9.gorg.tel')"
@@ -467,14 +467,6 @@
               ><span class="text-xl font-semibold">{{ item }}</span>
             </h4>
           </template> -->
-          <h4 class="mb-2">
-            <i class="fa-solid fa-phone main-color ms-3"></i
-            ><span class="text-xl font-semibold">995 55555 9631+</span>
-          </h4>
-          <h4 class="mb-2">
-            <i class="fa-solid fa-phone main-color ms-3"></i
-            ><span class="text-xl font-semibold">995 55555 9731+</span>
-          </h4>
         </div>
       </section>
       <section class="bg-main-color py-2 text-center">
