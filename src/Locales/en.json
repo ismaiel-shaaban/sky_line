@@ -105,12 +105,12 @@
       }
     },
     "footer": {
-      "address": {
+    
         "tit": "Address",
         "details": "Our offices in Georgia , Tbilis , Verketili Massive III",
         "tel": "+995 55555 9631",
-        "email": "gloryatravels@gmail.com"
-      },
+        "email": "gloryatravels@gmail.com",
+     
       "linksTit": "Quick Links",
       "links": ["Home", "Tour Programs", "Terms and Conditions", "Contact Us", "Articles"],
       "para": "All rights reserved"
