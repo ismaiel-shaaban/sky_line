@@ -95,8 +95,8 @@
           "tel": "+994557896357"
         },
         "gorg": {
-          "tit": "Georgia Customer Service",
-          "tel": ["+995555550806", "+995555550859", "+995555550871", "+995555550872"]
+          "tit": "Customer Service",
+          "tel": ["+995 55555 9631", "+995 55555 9731"]
         },
         "sud": {
           "tit": "Saudi Arabia Customer Service",
@@ -107,9 +107,9 @@
     "footer": {
       "address": {
         "tit": "Address",
-        "details": "Our offices in Mecca, Riyadh, Georgia, and Azerbaijan",
-        "tel": "+966535083575",
-        "email": "info@skylinegeorgia.com"
+        "details": "Our offices in Georgia , Tbilis , Verketili Massive III",
+        "tel": "+995 55555 9631",
+        "email": "gloryatravels@gmail.com"
       },
       "linksTit": "Quick Links",
       "links": ["Home", "Tour Programs", "Terms and Conditions", "Contact Us", "Articles"],

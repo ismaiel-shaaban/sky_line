@@ -58,7 +58,7 @@
                 <h5 class="text-lg text-gray-600 font-semibold mt-3">{{ $t('home.sec1.para') }}</h5>
             </div>
             <div class="col-lg-6 w-full lg:mt-0 mt-3">
-                <div class="w-50 mx-auto d-flex  flex justify-content-center align-items-center"><img src="../assets/Images/sky-logo.png" class="w-50 lg:ms-auto mx-auto" alt=""></div>
+                <div class="w-50 mx-auto d-flex  flex justify-content-center align-items-center"><img src="../assets/Images/WEBSITE DESIGN/logo.png" class="w-100 lg:ms-auto mx-auto" alt=""></div>
             </div>
             </div>
         </section>
@@ -71,12 +71,12 @@
             <div class="d-flex flex-wrap col-10 mx-auto mt-5">
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
-                    <img src="../assets/Images/10Days.png" class="card-image" alt="">
-                    <div class="price-overlay">
+                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <!-- <div class="price-overlay">
                         <p class="m-0 text-decoration-line-through fw-bold text-center text-lg">1235</p>
                         <p class="m-0 font-semibold fw-bold text-center">1280</p>
                         <p class="m-0 text-center text-sm fw-bold">{{ $t('home.money') }}</p>
-                    </div>
+                    </div> -->
                     <h6 class="text-center">{{ $t('home.sec3.card1.cardtit') }}</h6>
                     <p class="text-center text-gray-600 my-1 mb-2">{{ $t('home.sec3.card1.cardpara') }}</p>
                     <button class="prim-btn col-10 mx-auto"><i class="fa-brands fa-whatsapp me-3"></i>{{ $t('home.sec3.card1.cardbtn') }}</button>
@@ -84,12 +84,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
-                    <img src="../assets/Images/8Days.png" class="card-image" alt="">
-                    <div class="price-overlay">
+                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <!-- <div class="price-overlay">
                         <p class="fw-bold m-0 text-decoration-line-through text-gray-400 text-center text-lg">1055</p>
                         <p class="fw-bold m-0 text-lg font-semibold text-center">1050</p>
                         <p class="fw-bold m-0 text-center text-sm">{{ $t('home.money') }}</p>
-                    </div>
+                    </div> -->
                     <h6 class="text-center">{{ $t('home.sec3.card2.cardtit') }}</h6>
                     <p class="text-center text-gray-600 my-1 mb-2">{{ $t('home.sec3.card2.cardpara') }}</p>
                     <button class="prim-btn col-10 mx-auto"><i class="fa-brands fa-whatsapp me-3"></i>{{ $t('home.sec3.card2.cardbtn') }}</button>
@@ -97,12 +97,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
-                    <img src="../assets/Images/12Days.png" class="card-image" alt="">
-                    <div class="price-overlay">
+                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <!-- <div class="price-overlay">
                         <p class="fw-bold m-0 text-decoration-line-through text-gray-400 text-center text-lg">1485</p>
                         <p class="fw-bold m-0 text-lg font-semibold text-center">1590</p>
                         <p class="fw-bold m-0 text-center text-sm">{{ $t('home.money') }}</p>
-                    </div>
+                    </div> -->
                     <h6 class="text-center">{{ $t('home.sec3.card3.cardtit') }}</h6>
                     <p class="text-center text-gray-600 my-1 mb-2">{{ $t('home.sec3.card3.cardpara') }}</p>
                     <button class="prim-btn col-10 mx-auto"><i class="fa-brands fa-whatsapp me-3"></i>{{ $t('home.sec3.card1.cardbtn') }}</button>
@@ -125,12 +125,12 @@
             <div class="d-flex flex-wrap col-10 mx-auto mt-7">
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
-                    <img src="../assets/Images/12Days-azrabegan.png" class="card-image" alt="">
-                    <div class="price-overlay">
+                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <!-- <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1280</p>
                         <p class="fw-semibold m-0 text-center">1630</p>
                         <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
-                    </div>
+                    </div> -->
                     <h6 class="text-center">{{ $t('home.sec6.card1.cardtit') }}</h6>
                     <p class="text-center text-gray-600 my-3">{{ $t('home.sec6.card1.cardpara') }}</p>
                     <button class="prim-btn rounded-3xl w-10/12 block mx-auto font-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
@@ -138,12 +138,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card relative pb-4">
-                    <img src="../assets/Images/10Days-azrabegan.png" class="card-image" alt="">
-                    <div class="price-overlay">
+                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <!-- <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1110</p>
                         <p class="fw-semibold m-0 text-lg font-semibold text-center">1420</p>
                         <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
-                    </div>
+                    </div> -->
                     <h6 class="text-center">{{ $t('home.sec6.card2.cardtit') }}</h6>
                     <p class="text-center text-gray-600 my-3">{{ $t('home.sec6.card2.cardpara') }}</p>
                     <button class="prim-btn w-10/12 block mx-auto font-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
@@ -151,12 +151,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
-                    <img src="../assets/Images/8Days-azrabegan.png" class="card-image" alt="">
-                    <div class="price-overlay">
+                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <!-- <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">940</p>
                         <p class="fw-semibold m-0 text-center">1210</p>
                         <p class="fw-semibold m-0 text-center text-sm">{{ $t('home.money') }}</p>
-                    </div>
+                    </div> -->
                     <h6 class="text-center">{{ $t('home.sec6.card3.cardtit') }}</h6>
                     <p class="text-center text-gray-600 my-3">{{ $t('home.sec6.card3.cardpara') }}</p>
                     <button class="prim-btn w-10/12 block mx-auto font-semibold"><i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب</button>
@@ -507,7 +507,7 @@
                 <router-link :to="`/${$i18n.locale}/createJourney`" class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold" >{{ $t('home.sec8.btn') }}</router-link>
             </div>
         </section>  
-        <section class="d-flex flex-wrap col-10 mx-auto justify-content-lg-between justify-content-center">
+        <!-- <section class="d-flex flex-wrap col-10 mx-auto justify-content-lg-between justify-content-center">
             <div class="col-lg-4 col-md-6 text-center">
                 <i class="fa-solid fa-phone main-color contact-sec fs-2"></i>
                 <h3 class="text-2xl font-bold my-5 text-gray-800">{{ $t('home.sec9.azra.tit') }}</h3>
@@ -525,7 +525,7 @@
                 <h3 class="text-2xl font-bold my-5 text-gray-800">{{ $t('home.sec9.sud.tit') }}</h3>
                 <h4><i class="fa-solid fa-phone main-color ms-3"></i><span class="text-xl font-semibold text-gray-500">{{ $t('home.sec9.sud.tel') }}</span></h4>
             </div>
-        </section>
+        </section> -->
         <FooterComp></FooterComp>
     </div>
 </template>
@@ -533,8 +533,8 @@
 import HeaderComp from "../components/HeaderComp.vue";
 import FooterComp from "../components/FooterComp.vue";
 // import AboutPopUp from "../components/AboutPopUp.vue";
-import OffersPopup from "../components/OffersPopup.vue";
-import NewPopup from "../components/NewPopup.vue";
+// import OffersPopup from "../components/OffersPopup.vue";
+// import NewPopup from "../components/NewPopup.vue";
 import { ref, watch, onMounted, inject } from "vue";
 import axios from "axios";
 import i18n from "../i18n";

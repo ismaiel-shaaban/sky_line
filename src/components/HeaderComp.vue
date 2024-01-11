@@ -87,16 +87,16 @@
         </div>
         <div class="h-[250px] w-100 overflow-hidden relative" v-if="isRouteActive('/ar') || isRouteActive('/en')">
             <swiper :modules="modules" :slides-per-view="1" :loop="true" :autoplay="{delay:1000,diableOnInteraction:false,pauseOnMouseEnter:true}"  :space-between="0" @swiper="onSwiper" @slideChange="onSlideChange" class="w-100 d-flex justify-content-center">
-                <swiper-slide><img src="../assets/Images/W8A7cfSFFqkctjTCafzWsZHM0Dd1Zz-meta2LPZg9in2Ykg2YTYp9mK2YYuanBn-.jpg" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
-                <swiper-slide><img src="../assets/Images/W8A7cfSFFqkctjTCafzWsZHM0Dd1Zz-meta2LPZg9in2Ykg2YTYp9mK2YYuanBn-.jpg" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
-                <swiper-slide><img src="../assets/Images/W8A7cfSFFqkctjTCafzWsZHM0Dd1Zz-meta2LPZg9in2Ykg2YTYp9mK2YYuanBn-.jpg" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
+                <swiper-slide><img src="../assets/Images/WEBSITE DESIGN/1440x350 pixl.JPG" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
+                <swiper-slide><img src="../assets/Images/WEBSITE DESIGN/1440x350 pixl.JPG" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
+                <swiper-slide><img src="../assets/Images/WEBSITE DESIGN/1440x350 pixl.JPG" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
             </swiper>
             
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 order-first order-sm-0">
             <div class="container">
                 
-                <router-link class="navbar-brand me-0 me-md-auto ms-4" :to="`/${$i18n.locale}`"><img src="../assets/Images/sky-logo.png" alt="" height="60"></router-link>
+                <router-link class="navbar-brand me-0 me-md-auto ms-4" :to="`/${$i18n.locale}`"><img src="../assets/Images/WEBSITE DESIGN/logo.png" alt="" height="60"></router-link>
                 <span class="lang btn btn-dark me-auto fw-bold d-flex align-items-center gap-2 ms-3 d-sm-none d-block" @click="changeLang">
                     <i class="fa-solid fa-globe fs-4"></i>
                     {{ $i18n.locale === 'en' ? 'AR' : 'EN' }}
@@ -109,11 +109,6 @@
                         <li class="nav-item position-relative">
                         <router-link :to="`/${$i18n.locale}`" class="nav-link fw-semibold" aria-current="page" :class="{'active' : isRouteActive('/ar') || isRouteActive('/en')}"><i class="fa-solid fa-house ms-2"></i>{{$t('header.links.li1')}}</router-link>
                         </li>
-                        <!-- <li class="nav-item position-relative">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-info ms-2"></i>{{ $t('header.links.li3.name') }}
-                            </a>
-                        </li> -->
                         <template v-for="(item, index) in $tm('serviciesCards')" :key="index">
                             <li class="nav-item position-relative">
                             <router-link v-if="!item.link.includes('http')" class="nav-link fw-semibold" :to="`/${$i18n.locale}/${item.link}`" :class="{'active' : isRouteActive(`/ar/${item.link}`) ||isRouteActive(`/en/${item.link}`)}">
