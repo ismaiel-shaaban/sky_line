@@ -469,11 +469,11 @@
           </template> -->
           <h4 class="mb-2">
             <i class="fa-solid fa-phone main-color ms-3"></i
-            ><span class="text-xl font-semibold">{{ $t('home.sec9.gorg.tel[0]') }}</span>
+            ><span class="text-xl font-semibold">995 55555 9631+</span>
           </h4>
           <h4 class="mb-2">
             <i class="fa-solid fa-phone main-color ms-3"></i
-            ><span class="text-xl font-semibold">{{ $t('home.sec9.gorg.tel[1]') }}</span>
+            ><span class="text-xl font-semibold">995 55555 9731+</span>
           </h4>
         </div>
       </section>
