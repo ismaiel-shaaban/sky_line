@@ -445,10 +445,10 @@
       <section class="d-flex flex-wrap col-10 mx-auto my-5">
         <div class="col-lg-4 col-md-6">
           <h3 class="text-3xl font-semibold main-color">
-           ;klj;lj
+            {{ $tm("footer.tit") }}
           </h3>
           <h5 class="fw-semibold my-2 mt-4">
-            klhklhklhh
+            {{ $tm("footer.details") }}
           </h5>
           <!-- <h5 class="fw-semibold my-2">{{ $t("footer.tel") }}</h5>
           <h5 class="fw-semibold my-2">{{ $t("footer.email") }}</h5> -->
