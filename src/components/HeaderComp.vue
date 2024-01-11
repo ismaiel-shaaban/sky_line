@@ -87,9 +87,9 @@
         </div>
         <div class="h-[250px] w-100 overflow-hidden relative" v-if="isRouteActive('/ar') || isRouteActive('/en')">
             <swiper :modules="modules" :slides-per-view="1" :loop="true" :autoplay="{delay:1000,diableOnInteraction:false,pauseOnMouseEnter:true}"  :space-between="0" @swiper="onSwiper" @slideChange="onSlideChange" class="w-100 d-flex justify-content-center">
-                <swiper-slide><img src="../assets/Images/1440x350 pixl.JPG" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
-                <swiper-slide><img src="../assets/Images/1440x350 pixl.JPG" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
-                <swiper-slide><img src="../assets/Images/1440x350 pixl.JPG" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
+                <swiper-slide><img src="../assets/Images/Banner.JPG" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
+                <swiper-slide><img src="../assets/Images/Banner.JPG" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
+                <swiper-slide><img src="../assets/Images/Banner.JPG" alt="Home Banner" class=" top-50 -translate-y-1/2 w-100 h-100"></swiper-slide>
             </swiper>
             
         </div>
