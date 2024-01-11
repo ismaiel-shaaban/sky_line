@@ -456,7 +456,7 @@
       
         <div class="col-lg-4 col-md-6 text-center">
           <h3 class="text-2xl font-bold main-color mb-4 text-gray-800">
-            {{ $t("home.sec9.gorg.tit") }}
+          خدمة العملاء
           </h3>
           <!-- <template
             v-for="(item, index) in $tm('home.sec9.gorg.tel')"
