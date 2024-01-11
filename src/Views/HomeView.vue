@@ -442,7 +442,7 @@
           </div>
         </div>
       </section>
-      <section class="d-flex flex-wrap col-10 mx-auto my-5">
+      <!-- <section class="d-flex flex-wrap col-10 mx-auto my-5">
         <div class="col-lg-4 col-md-6">
           <h3 class="text-3xl font-semibold main-color">
             {{ $t("footer.address.tit") }}
@@ -453,18 +453,8 @@
           <h5 class="fw-semibold my-2">{{ $t("footer.address.tel") }}</h5>
           <h5 class="fw-semibold my-2">{{ $t("footer.address.email") }}</h5>
         </div>
-        <!-- <div class="col-lg-4 text-center col-md-6">
-          <h3 class="text-3xl font-semibold main-color">
-            {{ $t("footer.linksTit") }}
-          </h3>
-          <ul class="mt-4">
-            <template v-for="(item, index) in $tm('footer.links')" :key="index">
-              <li class="fs-5 fw-semibold my-3">{{ item }}</li>
-            </template>
-          </ul>
-        </div> -->
+      
         <div class="col-lg-4 col-md-6 text-center">
-          <!-- <i class="fa-solid fa-phone main-color contact-sec fs-2"></i> -->
           <h3 class="text-2xl font-bold main-color mb-4 text-gray-800">
             {{ $t("home.sec9.gorg.tit") }}
           </h3>
@@ -478,7 +468,7 @@
             </h4>
           </template>
         </div>
-      </section>
+      </section> -->
       <section class="bg-main-color py-2 text-center">
         <p class="fs-5 fw-semibold text-white">{{ $t("footer.para") }}</p>
       </section>
