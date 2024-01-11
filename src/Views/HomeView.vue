@@ -909,15 +909,15 @@ onMounted(async () => {
     .then((data) => {
       slider.value = data.data;
     });
-  await axios
-    .get("https://seasonreal.seasonsge.com/appv1real/info")
-    .then((data) => {
-      info.value = data.data[0];
-      localStorage.setItem("websiteInfo", JSON.stringify(info.value));
-      document.getElementById(
-        "favicon"
-      ).href = `https://seasonreal.seasonsge.com/${data.data[0].favicon}`;
-    });
+  // await axios
+  //   .get("https://seasonreal.seasonsge.com/appv1real/info")
+  //   .then((data) => {
+  //     info.value = data.data[0];
+  //     localStorage.setItem("websiteInfo", JSON.stringify(info.value));
+  //     document.getElementById(
+  //       "favicon"
+  //     ).href = `https://seasonreal.seasonsge.com/${data.data[0].favicon}`;
+  //   });
   setTimeout(() => {
     newPopup.value = true;
   }, 100);
