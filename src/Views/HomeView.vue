@@ -58,7 +58,7 @@
                 <h5 class="text-lg text-gray-600 font-semibold mt-3">{{ $t('home.sec1.para') }}</h5>
             </div>
             <div class="col-lg-6 w-full lg:mt-0 mt-3">
-                <div class="w-50 mx-auto d-flex  flex justify-content-center align-items-center"><img src="../assets/Images/WEBSITE DESIGN/logo.png" class="w-100 lg:ms-auto mx-auto" alt=""></div>
+                <div class="w-50 mx-auto d-flex  flex justify-content-center align-items-center"><img src="../assets/Images/logo.png" class="w-100 lg:ms-auto mx-auto" alt=""></div>
             </div>
             </div>
         </section>
@@ -71,7 +71,7 @@
             <div class="d-flex flex-wrap col-10 mx-auto mt-5">
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
-                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <img src="../assets/Images/offers.JPG" class="card-image" alt="">
                     <!-- <div class="price-overlay">
                         <p class="m-0 text-decoration-line-through fw-bold text-center text-lg">1235</p>
                         <p class="m-0 font-semibold fw-bold text-center">1280</p>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
-                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <img src="../assets/Images/offers.JPG" class="card-image" alt="">
                     <!-- <div class="price-overlay">
                         <p class="fw-bold m-0 text-decoration-line-through text-gray-400 text-center text-lg">1055</p>
                         <p class="fw-bold m-0 text-lg font-semibold text-center">1050</p>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
-                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <img src="../assets/Images/offers.JPG" class="card-image" alt="">
                     <!-- <div class="price-overlay">
                         <p class="fw-bold m-0 text-decoration-line-through text-gray-400 text-center text-lg">1485</p>
                         <p class="fw-bold m-0 text-lg font-semibold text-center">1590</p>
@@ -125,7 +125,7 @@
             <div class="d-flex flex-wrap col-10 mx-auto mt-7">
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
-                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <img src="../assets/Images/offers.JPG" class="card-image" alt="">
                     <!-- <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1280</p>
                         <p class="fw-semibold m-0 text-center">1630</p>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card relative pb-4">
-                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <img src="../assets/Images/offers.JPG" class="card-image" alt="">
                     <!-- <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">1110</p>
                         <p class="fw-semibold m-0 text-lg font-semibold text-center">1420</p>
@@ -151,7 +151,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
                     <div class="card position-relative pb-4">
-                    <img src="../assets/Images/WEBSITE DESIGN/offers.JPG" class="card-image" alt="">
+                    <img src="../assets/Images/offers.JPG" class="card-image" alt="">
                     <!-- <div class="price-overlay">
                         <p class="fw-semibold m-0 text-decoration-line-through text-center">940</p>
                         <p class="fw-semibold m-0 text-center">1210</p>
