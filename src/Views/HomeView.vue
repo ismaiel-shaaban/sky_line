@@ -450,8 +450,8 @@
           <h5 class="fw-semibold my-2 mt-4">
             {{ $tm("footer.details") }}
           </h5>
-          <!-- <h5 class="fw-semibold my-2">{{ $t("footer.tel") }}</h5>
-          <h5 class="fw-semibold my-2">{{ $t("footer.email") }}</h5> -->
+          <h5 class="fw-semibold my-2">{{ $tm("footer.tel") }}</h5>
+          <h5 class="fw-semibold my-2">{{ $tm("footer.email") }}</h5>
         </div>
       
         <div class="col-lg-4 col-md-6 text-center">
