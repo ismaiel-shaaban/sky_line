@@ -217,6 +217,17 @@
                 </a>
               </li>
             </template>
+            <li class="nav-item position-relative">
+              <router-link
+                :to="`/${$i18n.locale}/contactUs`"
+                class="nav-link fw-semibold"
+                aria-current="page"
+                :class="{
+                  active: isRouteActive('/ar/contactUs') || isRouteActive('/en/contactUs'),
+                }"
+                ><i class="fa-solid fa-message mx-2"></i>{{ $t("header.links.li2") }}</router-link
+              >
+            </li>
           </ul>
         </div>
       </div>

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
     "@popperjs/core": "^2.11.8",
     "@vuelidate/core": "^2.0.2",
     "@vuelidate/validators": "^2.0.2",

@@ -82,7 +82,7 @@
           :key="index"
         >
           <h4 class="mb-2">
-            <i class="fa-solid fa-phone main-color ms-3"></i
+            <i class="fa-solid fa-phone text-primary ms-3"></i
             ><span class="text-xl font-semibold">{{ item }}</span>
           </h4>
         </template>

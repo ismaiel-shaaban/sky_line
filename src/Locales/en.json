@@ -10,32 +10,19 @@
         "login": "Login / Register",
         "links": {
             "li1": "Home",
-            "li2": {
-                "name": "Tourist Trips",
-                "sublinks": ["Tourist Trips to Georgia", "Tourist Trips to Azerbaijan"]
-            },
-            "li3": {
-                "name": "About the Company",
-                "sublinks": ["About Us", "Contact Us", "Company Policy"]
-            },
-            "li4": {
-                "name": "Our Branches",
-                "sublinks": ["Azerbaijan", "Georgia", "Saudi Arabia"]
-            },
-            "li5": "Air Travel",
-            "li6": "Customer Reviews",
-            "li7": "Create Your Journey"
+            "li2": "Contact Us"
+            
         }
     },
     "home": {
       "money": "dolar",
       "sec1": {
-        "tit": "Skyline Tourism Company",
-        "para": "Skyline Tourism Company in Azerbaijan and Georgia, the most luxurious, suitable, and trusted name for Arab families and Arab travelers."
+        "tit": "Glorya Travel Tourism Company",
+        "para": "Embark on an enchanting journey with Glorya Travel as we invite you to explore the captivating destinations of Azerbaijan and Georgia. Immerse yourself in the rich tapestry of culture, history, and natural beauty that these two remarkable countries have to offer."
       },
       "sec2": {
         "tit": "Tourism in Georgia",
-        "para": "The latest tourist offers with special programs that include several tourist regions and cities according to the number of days of your travel program, with packages from airport to airport."
+        "para": "Embark on an unforgettable journey to the enchanting land of Georgia with Glorya Travel, where ancient history, diverse landscapes. Nestled in the heart of the Caucasus region, Georgia unfolds its treasures, inviting travelers to explore its rich cultural heritage and breathtaking natural wonders."
       },
       "sec3": {
         "tit": "Georgia Offers",
@@ -61,7 +48,7 @@
       },
       "sec5": {
         "tit": "Tourism in Azerbaijan",
-        "para": "Do you suffer from fatigue and work pressure? Then come with us to the land of charm and antiquity, the Republic of Azerbaijan, a blend of history and mystery. You will find it in tourism in Azerbaijan. Start booking your trip, whether from Saudi Arabia or from the Emirates and Gulf countries."
+        "para": "Embark on a mesmerizing journey to the heart of Azerbaijan with Glorya Travel, where ancient history and modern vibrancy converge to create a truly enchanting destination. Nestled at the crossroads of Europe and Asia, Azerbaijan beckons with its rich cultural tapestry, diverse landscapes, and warm hospitality"
       },
       "sec6": {
         "tit": "Azerbaijan Offers",
@@ -113,7 +100,7 @@
      
       "linksTit": "Quick Links",
       "links": ["Home", "Tour Programs", "Terms and Conditions", "Contact Us", "Articles"],
-      "para": "All rights reserved"
+      "para": "Copyright 2024 All Rights is Reserved For Glorya Travel"
     },
     "headerLinks": [
         "home",

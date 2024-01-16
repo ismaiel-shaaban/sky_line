@@ -86,6 +86,11 @@ const router = createRouter({
       component: () => import("../Views/ClientAccount.vue"),
     },
     {
+      path: "/:lang/contactUs",
+      name: "Contact Us",
+      component: () => import("../Views/contactUs.vue"),
+    },
+    {
       path: "/:lang/cars-checkout/:id/:with",
       name: "Cars Checkout",
       component: () => import("../Views/Checkouts/CarsCheckout.vue"),

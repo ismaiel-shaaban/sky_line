@@ -55,40 +55,41 @@
       <div
         class="row mx-auto d-flex col-10 flex justify-content-between align-items-center"
       >
-        <div class="col-lg-6 lg:text-start text-center">
-          <h1 class="text-3xl main-color font-semibold">
+        <div class="col-lg-6 w-full">
+          <div
+            class="w-75 mx-auto shadow-sec d-flex flex justify-content-center align-items-center"
+          >
+            <img
+              src="../../public/images/tour-3.jpg"
+              class="w-100 lg:ms-auto mx-auto"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-lg-6 lg:text-start lg:mt-0 mt-3 text-center">
+          <h1 class="text-3xl font-hand main-color font-semibold">
             {{ $t("home.sec1.tit") }}
           </h1>
           <h5 class="text-lg text-gray-600 font-semibold mt-3">
             {{ $t("home.sec1.para") }}
           </h5>
         </div>
-        <div class="col-lg-6 w-full lg:mt-0 mt-3">
-          <div
-            class="w-50 mx-auto d-flex flex justify-content-center align-items-center"
-          >
-            <img
-              src="../../public/images/logo.png"
-              class="w-100 lg:ms-auto mx-auto"
-              alt=""
-            />
-          </div>
-        </div>
+        
       </div>
     </section>
     <section class="my-5">
-      <h1 class="text-3xl main-color text-center font-semibold">
+      <h2 class="fw-semibold font-hand main-color text-center">
         {{ $t("home.sec2.tit") }}
-      </h1>
-      <h4 class="text-lg text-gray-600 col-8 text-center mx-auto mt-5">
+      </h2>
+      <h6 class="fw-semibold col-6 mx-auto text-center mt-3">
         {{ $t("home.sec2.para") }}
-      </h4>
+      </h6>
     </section>
     <section class="my-5">
-      <h1 class="text-center main-color">{{ $t("home.sec3.tit") }}</h1>
+      <h1 class="text-center main-color font-hand">{{ $t("home.sec3.tit") }}</h1>
       <div class="d-flex flex-wrap col-10 mx-auto mt-5">
         <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
-          <div class="card position-relative pb-4">
+          <div class="card position-relative pb-4 shadow-sec">
             <img
               src="../../public/images/offers.jpeg"
               class="card-image"
@@ -110,7 +111,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
-          <div class="card position-relative pb-4">
+          <div class="card position-relative pb-4 shadow-sec">
             <img
               src="../../public/images/offers.jpeg"
               class="card-image"
@@ -132,7 +133,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
-          <div class="card position-relative pb-4">
+          <div class="card position-relative pb-4 shadow-sec">
             <img
               src="../../public/images/offers.jpeg"
               class="card-image"
@@ -161,7 +162,7 @@
       <div
         class="d-flex flex-wrap align-items-center col-lg-6 col-md-8 col-10 text-center justify-content-between"
       >
-        <h3 class="fw-semibold col-lg-6 text-white">
+        <h3 class="fw-semibold  col-lg-6 text-white">
           {{ $t("home.sec4.tit") }}
         </h3>
         <button class="btn btn-light col-lg-6 lg:mt-0 mt-3 fw-semibold text-lg">
@@ -171,7 +172,7 @@
       </div>
     </section>
     <section class="my-5">
-      <h2 class="fw-semibold main-color text-center">
+      <h2 class="fw-semibold font-hand main-color text-center">
         {{ $t("home.sec5.tit") }}
       </h2>
       <h6 class="fw-semibold col-6 mx-auto text-center mt-3">
@@ -179,12 +180,12 @@
       </h6>
     </section>
     <section class="my-5">
-      <h1 class="text-5xl font-semibold text-center main-color">
+      <h1 class="text-5xl font-semibold text-center font-hand main-color">
         {{ $t("home.sec6.tit") }}
       </h1>
       <div class="d-flex flex-wrap col-10 mx-auto mt-7">
         <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
-          <div class="card position-relative pb-4">
+          <div class="card position-relative pb-4 shadow-sec">
             <img
               src="../../public/images/offers.jpeg"
               class="card-image"
@@ -195,7 +196,7 @@
                         <p class="fw-semibold m-0 text-center">1630</p>
                         <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div> -->
-            <h6 class="text-center">{{ $t("home.sec6.card1.cardtit") }}</h6>
+            <h6 class="text-center px-2">{{ $t("home.sec6.card1.cardtit") }}</h6>
             <p class="text-center text-gray-600 my-3">
               {{ $t("home.sec6.card1.cardpara") }}
             </p>
@@ -207,7 +208,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
-          <div class="card relative pb-4">
+          <div class="card position-relative pb-4 shadow-sec">
             <img
               src="../../public/images/offers.jpeg"
               class="card-image"
@@ -218,7 +219,7 @@
                         <p class="fw-semibold m-0 text-lg font-semibold text-center">1420</p>
                         <p class="fw-semibold m-0 text-center">{{ $t('home.money') }}</p>
                     </div> -->
-            <h6 class="text-center">{{ $t("home.sec6.card2.cardtit") }}</h6>
+            <h6 class="text-center px-2">{{ $t("home.sec6.card2.cardtit") }}</h6>
             <p class="text-center text-gray-600 my-3">
               {{ $t("home.sec6.card2.cardpara") }}
             </p>
@@ -228,7 +229,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-12 mt-3 px-3">
-          <div class="card position-relative pb-4">
+          <div class="card position-relative pb-4 shadow-sec">
             <img
               src="../../public/images/offers.jpeg"
               class="card-image"
@@ -239,7 +240,7 @@
                         <p class="fw-semibold m-0 text-center">1210</p>
                         <p class="fw-semibold m-0 text-center text-sm">{{ $t('home.money') }}</p>
                     </div> -->
-            <h6 class="text-center">{{ $t("home.sec6.card3.cardtit") }}</h6>
+            <h6 class="text-center px-2">{{ $t("home.sec6.card3.cardtit") }}</h6>
             <p class="text-center text-gray-600 my-3">
               {{ $t("home.sec6.card3.cardpara") }}
             </p>
@@ -250,7 +251,6 @@
         </div>
       </div>
     </section>
-
     <section
       ref="targetDiv"
       class="border-bottom border-black my-5"
@@ -316,7 +316,7 @@
       </div>
     </section>
     <Loader v-if="loading"></Loader>
-    <section
+    <!-- <section
       class="bg-main-color py-5 d-flex justify-content-center align-items-center mb-5"
     >
       <div
@@ -329,7 +329,7 @@
           <i class="fa-solid fa-comments me-5"></i>{{ $t("home.sec7.btn") }}
         </button>
       </div>
-    </section>
+    </section> -->
     <section class="my-10">
       <swiper
         :modules="modules"
@@ -375,7 +375,7 @@
       </swiper>
     </section>
     <section
-      class="bg-main-color py-5 d-flex justify-content-center align-items-center my-5"
+      class="bg-travel-programs py-5 d-flex justify-content-center align-items-center my-5"
     >
       <div
         class="d-flex flex-wrap col-10 justify-content-md-between justify-content-center align-items-center"
@@ -706,7 +706,23 @@ onMounted(async () => {
 </script>
 
 <style lang="scss" scoped>
-
+@font-face {
+  font-family: handwrite;
+  src: url('../../public/fonts/Caveat-VariableFont_wght.ttf');
+}
+.font-hand{
+  font-family: handwrite;
+}
+.shadow-primary{
+  box-shadow: 3px 5px 23px 0px #fd820e 
+}
+.shadow-sec{
+  box-shadow: 2px 2px 10px 0px #055f9f 
+}
+.bg-travel-programs{
+  background: #777 url(../../public/images/Travel-programs.jpg) center/cover;
+  background-blend-mode: multiply;
+}
 .footer-image {
   height: 96px;
 }
@@ -798,7 +814,7 @@ onMounted(async () => {
   margin-inline: auto;
   height: 120px;
   border-radius: 100%;
-  background: blue;
+  background: #055f9f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -824,9 +840,11 @@ onMounted(async () => {
 }
 .img-overlay {
   height: 300px;
-  //   background: url('../../public/images/bg1.jpg') no-repeat center;
-  //   background-size: 100% 100%;
-  background: #fd820e;
+    background: #777 url('../../public/images/travel-contact.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    // background-size: 100% 100%;
+  // background: #fd820e;
 }
 .price-overlay {
   //   @apply w-[100px] h-[100px] absolute top-[250px] rounded-full right-4 border-4 border-warning bg-white pt-2
