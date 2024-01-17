@@ -10,6 +10,16 @@
                         <input type="text" class="form-control" v-model="FormData.from_name" id="floatingPassword" placeholder="First Name">
                         <label for="floatingPassword">Your Name</label>
                     </div>
+                    <div class="mb-3">
+                      <label for="country" class="mb-1">Select Country:</label>
+                      <select v-model="FormData.codeCountry" class="form-select" id="country">
+                        <!-- <option></option> -->
+                        <option disabled selected>Select Country</option>
+                        <option v-for="country in countries" :key="country">
+                          {{ country }}
+                        </option>
+                      </select>
+                    </div>
                     <div class="form-floating mb-3">
                         <input type="tel" class="form-control" id="floatingPassword" v-model="FormData.phone_number" placeholder="Phone Number">
                         <label for="floatingPassword">Phone Number</label>
@@ -52,7 +62,22 @@ import emailjs from '@emailjs/browser';
                     user_email:null,
                     message:null,
                     subject:null,
-                }
+                    codeCountry:null,
+                },
+                countries:[
+                    "Saudi Arabia (+966)",
+                    "Kuwait (+965)",
+                    "United Arab Emirates (+971)",
+                    "Qatar (+974)",
+                    "Bahrain (+973)",
+                    "Egypt (+20)",
+                    "Yemen (+967)",
+                    "Georgia (+995)",
+                    "Azerbaijan (+994)",
+                    "Turkey (+90)",
+                    "Armenia (+374)",
+                    "Russia (+7)",
+                ]
             }
         },
         methods: {
@@ -64,8 +89,8 @@ import emailjs from '@emailjs/browser';
               }, (error) => {
                   console.log('FAILED...', error.text);
               });
-          }
-        }
+          },
+        },
     }
 </script>
 

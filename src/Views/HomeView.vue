@@ -156,12 +156,8 @@
         </div>
       </div>
     </section>
-    <section
-      class="my-5 img-overlay d-flex justify-content-center align-items-center"
-    >
-      <div
-        class="d-flex flex-wrap align-items-center col-lg-6 col-md-8 col-10 text-center justify-content-between"
-      >
+    <section class="my-5 img-overlay d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-wrap align-items-center col-lg-6 col-md-8 col-10 text-center justify-content-between">
         <h3 class="fw-semibold  col-lg-6 text-white">
           {{ $t("home.sec4.tit") }}
         </h3>
@@ -272,17 +268,26 @@
             >
               <div class="circle-shadow-o" v-if="index == 0">
                 <!-- <i class="fa-solid fa-shield text-white fs-1"></i> -->
-                <i
+                <!-- <i
                   class="fa-solid fa-earth-americas fa-spin text-white fs-1"
-                ></i>
+                ></i> -->
+                <div class="w-75">
+                  <img src="../../public/images/Travel-Programs.png" class="w-100" alt="">
+                </div>
               </div>
               <div class="circle-shadow-b" v-else-if="index == 1">
-                <i
+                <!-- <i
                   class="fa-solid fa-hotel text-white fs-1 fa-rotate fa-fade"
-                ></i>
+                ></i> -->
+                <div class="w-75">
+                  <img src="../../public/images/Hotel.png" class="w-100" alt="">
+                </div>
               </div>
               <div class="circle-shadow-o" v-else-if="index == 2">
-                <i class="fa-solid fa-car-side text-white fs-1 car"></i>
+                <!-- <i class="fa-solid fa-car-side text-white fs-1 car"></i> -->
+                <div class="w-75">
+                  <img src="../../public/images/car.png" class="w-100" alt="">
+                </div>
               </div>
               <h3 class="text-2xl mt-5 fw-bold text-decoration-underline">
                 {{ item.heading }}
@@ -295,7 +300,10 @@
               :href="item.link"
             >
               <div class="circle-shadow-b">
-                <i class="fa-sharp fa-solid fa-train text-white fs-1 train"></i>
+                <!-- <i class="fa-sharp fa-solid fa-train text-white fs-1 train"></i> -->
+                <div class="w-75">
+                  <img src="../../public/images/Train.png" class="w-100" alt="">
+                </div>
               </div>
               <h3 class="text-2xl mt-5 fw-bold">{{ item.heading }}</h3>
             </a>
