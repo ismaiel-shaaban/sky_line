@@ -1,97 +1,109 @@
 <template>
-
   <footer>
-    <section class="col-10 mx-auto my-3">
-      <div
-        class="d-flex flex-wrap align-items-center justify-content-lg-between justify-center"
-      >
-        <div class="col-3 mt-lg-0 my-2">
-          <img
-            src="../../public/images/logo.png"
-            class="footer-image"
-            alt=""
-          />
-        </div>
-        <div class="d-flex col-lg gap-3 justify-content-between w-100">
-          <div
-            class="d-flex justify-content-center align-items-center text-white bg-success social-link"
-          >
-            <i class="fa-brands fa-whatsapp fs-4"></i>
-          </div>
-          <div
-            class="d-flex justify-content-center align-items-center text-white bg-red social-link"
-          >
-            <i class="fa-brands fa-instagram fs-4"></i>
-          </div>
-          <div
-            class="d-flex justify-content-center align-items-center text-white bg-blue social-link"
-          >
-            <i class="fa-brands fa-twitter fs-4"></i>
-          </div>
-          <div
-            class="d-flex justify-content-center align-items-center text-white bg-primary social-link"
-          >
-            <i class="fa-brands fa-facebook-f fs-4"></i>
-          </div>
-          <div
-            class="d-flex justify-content-center align-items-center text-white bg-warning social-link"
-          >
-            <i class="fa-brands fa-snapchat fs-4"></i>
-          </div>
-          <div
-            class="d-flex justify-content-center align-items-center text-white bg-black social-link"
-          >
-            <i class="fa-brands fa-tiktok fs-4"></i>
-          </div>
-          <div
-            class="d-flex justify-content-center align-items-center text-white bg-danger social-link"
-          >
-            <i class="fa-brands fa-youtube fs-4"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="d-flex flex-wrap col-10 mx-auto my-5">
-      <div class="col-lg-4 col-md-6">
-        <h3 class="text-3xl font-semibold main-color">
-          {{ $t("footer.address.tit") }}
-        </h3>
-        <h5 class="fw-semibold my-2 mt-4">
-          {{ $t("footer.address.details") }}
-        </h5>
-        <h5 class="fw-semibold my-2">{{ $t("footer.address.tel") }}</h5>
-        <h5 class="fw-semibold my-2">{{ $t("footer.address.email") }}</h5>
-      </div>
-      <!-- <div class="col-lg-4 text-center col-md-6">
-        <h3 class="text-3xl font-semibold main-color">
-          {{ $t("footer.linksTit") }}
-        </h3>
-        <ul class="mt-4">
-          <template v-for="(item, index) in $tm('footer.links')" :key="index">
-            <li class="fs-5 fw-semibold my-3">{{ item }}</li>
-          </template>
-        </ul>
-      </div> -->
-      <div class="col-lg-4 col-md-6 text-center">
-        <!-- <i class="fa-solid fa-phone main-color contact-sec fs-2"></i> -->
-        <h3 class="text-2xl font-bold main-color mb-4 text-gray-800">
-          {{ $t("home.sec9.gorg.tit") }}
-        </h3>
-        <template
-          v-for="(item, index) in $tm('home.sec9.gorg.tel')"
-          :key="index"
+      <section class="col-10 mx-auto my-3">
+        <div
+          class="row justify-content-lg-between"
         >
-          <h4 class="mb-2">
-            <i class="fa-solid fa-phone text-primary ms-3"></i
-            ><span class="text-xl font-semibold">{{ item }}</span>
-          </h4>
-        </template>
-      </div>
-    </section>
-    <section class="bg-main-color py-2 text-center">
-      <p class="fs-5 fw-semibold text-white">{{ $t("footer.para") }}</p>
-    </section>
-  </footer>
+          <div class="col-lg-4 mt-lg-0 my-2">
+            <img
+              src="../../public/images/logo.png"
+              class="footer-image"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3 class="text-3xl font-semibold main-color">
+              {{ $tm("footer.tit") }}
+            </h3>
+            <h5 class="fw-semibold my-2 mt-4">
+              {{ $tm("footer.details") }}
+            </h5>
+            <h5 class="fw-semibold my-2">{{ $tm("footer.tel") }}</h5>
+            <h5 class="fw-semibold my-2">{{ $tm("footer.email") }}</h5>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h3 class="text-2xl font-bold main-color mb-4 text-gray-800">
+              {{ $t("home.sec9.gorg.tit") }}
+            </h3>
+            <template
+              v-for="(item, index) in $tm('home.sec9.gorg.tel')"
+              :key="index"
+            >
+              <h4 class="mb-2">
+                <i class="fa-solid fa-phone main-color ms-3"></i
+                ><span class="text-xl font-semibold">{{ item }}</span>
+              </h4>
+            </template>
+          </div>
+        </div>
+      </section>
+      <section class="d-flex flex-wrap col-10 mx-auto my-5">
+        <!-- <div class="col-lg-4 col-md-6">
+          <h3 class="text-3xl font-semibold main-color">
+            {{ $tm("footer.tit") }}
+          </h3>
+          <h5 class="fw-semibold my-2 mt-4">
+            {{ $tm("footer.details") }}
+          </h5>
+          <h5 class="fw-semibold my-2">{{ $tm("footer.tel") }}</h5>
+          <h5 class="fw-semibold my-2">{{ $tm("footer.email") }}</h5>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <h3 class="text-2xl font-bold main-color mb-4 text-gray-800">
+            {{ $t("home.sec9.gorg.tit") }}
+          </h3>
+          <template
+            v-for="(item, index) in $tm('home.sec9.gorg.tel')"
+            :key="index"
+          >
+            <h4 class="mb-2">
+              <i class="fa-solid fa-phone main-color ms-3"></i
+              ><span class="text-xl font-semibold">{{ item }}</span>
+            </h4>
+          </template>
+        </div> -->
+        <div class="d-flex col-lg gap-3 justify-content-between w-100">
+            <div
+              class="d-flex justify-content-center align-items-center text-white bg-success social-link"
+            >
+              <i class="fa-brands fa-whatsapp fs-4"></i>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center text-white bg-red social-link"
+            >
+              <i class="fa-brands fa-instagram fs-4"></i>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center text-white bg-blue social-link"
+            >
+              <i class="fa-brands fa-twitter fs-4"></i>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center text-white bg-primary social-link"
+            >
+              <i class="fa-brands fa-facebook-f fs-4"></i>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center text-white bg-warning social-link"
+            >
+              <i class="fa-brands fa-snapchat fs-4"></i>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center text-white bg-black social-link"
+            >
+              <i class="fa-brands fa-tiktok fs-4"></i>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center text-white bg-danger social-link"
+            >
+              <i class="fa-brands fa-youtube fs-4"></i>
+            </div>
+          </div>
+      </section>
+      <section class="bg-main-color py-2 text-center">
+        <p class="fs-5 fw-semibold text-white">{{ $t("footer.para") }}</p>
+      </section>
+    </footer>
 </template>
 <script setup>
 import { useRouter } from "vue-router";
