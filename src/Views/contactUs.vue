@@ -1,5 +1,6 @@
 <template>
     <section>
+    <!-- last version -->
         <HeaderComp></HeaderComp>
         <section class="my-5">
             <h2 class="text-center fw-semibold mb-3">Contact Us</h2>
