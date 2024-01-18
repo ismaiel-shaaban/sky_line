@@ -39,7 +39,7 @@
       </section>
       <section class="row align-items-center col-10 mx-auto my-5">
         <div class="col-lg-2 col-4 mx-auto mx-lg-0">
-          <img src="../../public/images/Sochial Media.PNG" class="w-100" alt="">
+          <img src="../../public/images/Sochial-Media.PNG" class="w-100" alt="">
         </div>
         <div class="d-flex col-lg justify-content-between w-100">
             <div

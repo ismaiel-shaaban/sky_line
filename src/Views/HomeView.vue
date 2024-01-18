@@ -106,7 +106,7 @@
             </p>
             <button class="prim-btn col-10 mx-auto">
               <i class="fa-brands fa-whatsapp me-3"></i
-              >{{ $t("home.sec3.card1.cardbtn") }}
+              > {{ $t("home.sec3.card1.cardbtn") }}
             </button>
           </div>
         </div>
@@ -128,7 +128,7 @@
             </p>
             <button class="prim-btn col-10 mx-auto">
               <i class="fa-brands fa-whatsapp me-3"></i
-              >{{ $t("home.sec3.card2.cardbtn") }}
+              > {{ $t("home.sec3.card2.cardbtn") }}
             </button>
           </div>
         </div>
@@ -150,7 +150,7 @@
             </p>
             <button class="prim-btn col-10 mx-auto">
               <i class="fa-brands fa-whatsapp me-3"></i
-              >{{ $t("home.sec3.card1.cardbtn") }}
+              > {{ $t("home.sec3.card1.cardbtn") }}
             </button>
           </div>
         </div>
@@ -199,7 +199,7 @@
             <button
               class="prim-btn rounded-3xl w-10/12 block mx-auto font-semibold"
             >
-              <i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب
+              <i class="fa-brands fa-whatsapp me-3"></i> {{ $t("home.sec3.card1.cardbtn") }}
             </button>
           </div>
         </div>
@@ -220,7 +220,7 @@
               {{ $t("home.sec6.card2.cardpara") }}
             </p>
             <button class="prim-btn w-10/12 block mx-auto font-semibold">
-              <i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب
+              <i class="fa-brands fa-whatsapp me-3"></i> {{ $t("home.sec3.card1.cardbtn") }}
             </button>
           </div>
         </div>
@@ -241,7 +241,7 @@
               {{ $t("home.sec6.card3.cardpara") }}
             </p>
             <button class="prim-btn w-10/12 block mx-auto font-semibold">
-              <i class="fa-brands fa-whatsapp me-3"></i>استفسر واحجز واتساب
+              <i class="fa-brands fa-whatsapp me-3"></i> {{ $t("home.sec3.card1.cardbtn") }}
             </button>
           </div>
         </div>
@@ -290,7 +290,7 @@
               <div class="circle-shadow-o" v-else-if="index == 2">
                 <!-- <i class="fa-solid fa-car-side text-white fs-1 car"></i> -->
                 <div class="w-100">
-                  <img src="../../public/images/Rent Car.PNG" class="w-100" alt="">
+                  <img src="../../public/images/Rent-Car.PNG" class="w-100" alt="">
                   <img src="../../public/images/Shape7.PNG" class="w-100" alt="" v-if="$i18n.locale == 'en'">
                   <img src="../../public/images/Shape3.PNG" class="w-100" alt="" v-else>
                 </div>
