@@ -273,7 +273,8 @@
                 ></i> -->
                 <div class="w-100">
                   <img src="../../public/images/Programmes.PNG" class="w-100" alt="">
-                  <img src="../../public/images/Shape1.PNG" class="w-100" alt="">
+                  <img src="../../public/images/Shape5.PNG" class="w-100" alt="" v-if="$i18n.locale == 'en'">
+                  <img src="../../public/images/Shape1.PNG" class="w-100" alt="" v-else>
                 </div>
               </div>
               <div class="circle-shadow-b" v-else-if="index == 1">
@@ -282,14 +283,16 @@
                 ></i> -->
                 <div class="w-100">
                   <img src="../../public/images/Hotel.png" class="w-100" alt="">
-                  <img src="../../public/images/Shape2.PNG" class="w-100" alt="">
+                  <img src="../../public/images/Shape6.PNG" class="w-100" alt="" v-if="$i18n.locale == 'en'">
+                  <img src="../../public/images/Shape2.PNG" class="w-100" alt="" v-else>
                 </div>
               </div>
               <div class="circle-shadow-o" v-else-if="index == 2">
                 <!-- <i class="fa-solid fa-car-side text-white fs-1 car"></i> -->
                 <div class="w-100">
                   <img src="../../public/images/Rent Car.PNG" class="w-100" alt="">
-                  <img src="../../public/images/Shape3.PNG" class="w-100" alt="">
+                  <img src="../../public/images/Shape7.PNG" class="w-100" alt="" v-if="$i18n.locale == 'en'">
+                  <img src="../../public/images/Shape3.PNG" class="w-100" alt="" v-else>
                 </div>
               </div>
             </router-link>
@@ -303,7 +306,8 @@
               <!-- <i class="fa-sharp fa-solid fa-train text-white fs-1 train"></i> -->
               <div class="w-100">
                 <img src="../../public/images/Train.png" class="w-100" alt="">
-                <img src="../../public/images/Shape4.PNG" class="w-100" alt="">
+                <img src="../../public/images/Shape8.PNG" class="w-100" alt="" v-if="$i18n.locale == 'en'">
+                <img src="../../public/images/Shape4.PNG" class="w-100" alt="" v-else>
                 </div>
               </div>
             </a>
