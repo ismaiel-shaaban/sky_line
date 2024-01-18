@@ -139,11 +139,6 @@
               class="card-image"
               alt=""
             />
-            <!-- <div class="price-overlay">
-                        <p class="fw-bold m-0 text-decoration-line-through text-gray-400 text-center text-lg">1485</p>
-                        <p class="fw-bold m-0 text-lg font-semibold text-center">1590</p>
-                        <p class="fw-bold m-0 text-center text-sm">{{ $t('home.money') }}</p>
-                    </div> -->
             <h6 class="text-center">{{ $t("home.sec3.card3.cardtit") }}</h6>
             <p class="text-center text-gray-600 my-1 mb-2">
               {{ $t("home.sec3.card3.cardpara") }}
