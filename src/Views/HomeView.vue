@@ -249,7 +249,7 @@
     </section>
     <section
       ref="targetDiv"
-      class="border-bottom border-black my-5"
+      class="border-bottom border-black my-5 pb-5"
       id="createDiv"
     >
       <div class="col-10 mx-auto my-5">
@@ -271,41 +271,41 @@
                 <!-- <i
                   class="fa-solid fa-earth-americas fa-spin text-white fs-1"
                 ></i> -->
-                <div class="w-75">
-                  <img src="../../public/images/Travel-Programs.png" class="w-100" alt="">
+                <div class="w-100">
+                  <img src="../../public/images/Programmes.PNG" class="w-100" alt="">
+                  <img src="../../public/images/Shape1.PNG" class="w-100" alt="">
                 </div>
               </div>
               <div class="circle-shadow-b" v-else-if="index == 1">
                 <!-- <i
                   class="fa-solid fa-hotel text-white fs-1 fa-rotate fa-fade"
                 ></i> -->
-                <div class="w-75">
+                <div class="w-100">
                   <img src="../../public/images/Hotel.png" class="w-100" alt="">
+                  <img src="../../public/images/Shape2.PNG" class="w-100" alt="">
                 </div>
               </div>
               <div class="circle-shadow-o" v-else-if="index == 2">
                 <!-- <i class="fa-solid fa-car-side text-white fs-1 car"></i> -->
-                <div class="w-75">
-                  <img src="../../public/images/car.png" class="w-100" alt="">
+                <div class="w-100">
+                  <img src="../../public/images/Rent Car.PNG" class="w-100" alt="">
+                  <img src="../../public/images/Shape3.PNG" class="w-100" alt="">
                 </div>
               </div>
-              <h3 class="text-2xl mt-5 fw-bold text-decoration-underline">
-                {{ item.heading }}
-              </h3>
             </router-link>
             <a
-              v-if="item.link.includes('http')"
-              target="_blank"
-              class="fw-bold"
-              :href="item.link"
+            v-if="item.link.includes('http')"
+            target="_blank"
+            class="fw-bold"
+            :href="item.link"
             >
-              <div class="circle-shadow-b">
-                <!-- <i class="fa-sharp fa-solid fa-train text-white fs-1 train"></i> -->
-                <div class="w-75">
-                  <img src="../../public/images/Train.png" class="w-100" alt="">
+            <div class="circle-shadow-b">
+              <!-- <i class="fa-sharp fa-solid fa-train text-white fs-1 train"></i> -->
+              <div class="w-100">
+                <img src="../../public/images/Train.png" class="w-100" alt="">
+                <img src="../../public/images/Shape4.PNG" class="w-100" alt="">
                 </div>
               </div>
-              <h3 class="text-2xl mt-5 fw-bold">{{ item.heading }}</h3>
             </a>
           </div>
           <!-- <div class="text-center col-lg-3 col-md-6 mt-3">
@@ -332,7 +332,7 @@
       >
         <h3 class="fw-bold col-md-6 text-center text-white">
           {{ $t("home.sec7.tit") }}
-        </h3>
+        </h3>x`
         <button class="btn btn-light col-md-6 mt-md-0 mt-3 fw-semibold">
           <i class="fa-solid fa-comments me-5"></i>{{ $t("home.sec7.btn") }}
         </button>
@@ -724,24 +724,24 @@ onMounted(async () => {
 }
 .circle-shadow-o {
   //@apply w-[120px] drop-shadow-[-6px_2px_0px_rgba(0,0,0,0.25)] mx-auto h-[120px] rounded-full bg-primary flex justify-center items-center
-  width: 120px;
-  filter: drop-shadow(-6px 2px 0px rgba(0, 0, 0, 0.25));
+  width: 150px;
+  // filter: drop-shadow(-6px 2px 0px rgba(0, 0, 0, 0.25));
   margin-inline: auto;
   height: 120px;
   border-radius: 100%;
-  background: #fd820e;
+  // background: #fd820e;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .circle-shadow-b {
   //@apply w-[120px] drop-shadow-[-6px_2px_0px_rgba(0,0,0,0.25)] mx-auto h-[120px] rounded-full bg-primary flex justify-center items-center
-  width: 120px;
-  filter: drop-shadow(-6px 2px 0px rgba(0, 0, 0, 0.25));
+  width: 150px;
+  // filter: drop-shadow(-6px 2px 0px rgba(0, 0, 0, 0.25));
   margin-inline: auto;
   height: 120px;
   border-radius: 100%;
-  background: #055f9f;
+  // background: #055f9f;
   display: flex;
   justify-content: center;
   align-items: center;

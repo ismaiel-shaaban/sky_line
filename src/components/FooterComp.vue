@@ -37,66 +37,53 @@
           </div>
         </div>
       </section>
-      <section class="d-flex flex-wrap col-10 mx-auto my-5">
-        <!-- <div class="col-lg-4 col-md-6">
-          <h3 class="text-3xl font-semibold main-color">
-            {{ $tm("footer.tit") }}
-          </h3>
-          <h5 class="fw-semibold my-2 mt-4">
-            {{ $tm("footer.details") }}
-          </h5>
-          <h5 class="fw-semibold my-2">{{ $tm("footer.tel") }}</h5>
-          <h5 class="fw-semibold my-2">{{ $tm("footer.email") }}</h5>
+      <section class="row align-items-center col-10 mx-auto my-5">
+        <div class="col-lg-2 col-4 mx-auto mx-lg-0">
+          <img src="../../public/images/Sochial Media.PNG" class="w-100" alt="">
         </div>
-        <div class="col-lg-4 col-md-6 text-center">
-          <h3 class="text-2xl font-bold main-color mb-4 text-gray-800">
-            {{ $t("home.sec9.gorg.tit") }}
-          </h3>
-          <template
-            v-for="(item, index) in $tm('home.sec9.gorg.tel')"
-            :key="index"
-          >
-            <h4 class="mb-2">
-              <i class="fa-solid fa-phone main-color ms-3"></i
-              ><span class="text-xl font-semibold">{{ item }}</span>
-            </h4>
-          </template>
-        </div> -->
-        <div class="d-flex col-lg gap-3 justify-content-between w-100">
+        <div class="d-flex col-lg justify-content-between w-100">
             <div
-              class="d-flex justify-content-center align-items-center text-white bg-success social-link"
+              class="d-flex justify-content-center align-items-center text-white social-link"
             >
-              <i class="fa-brands fa-whatsapp fs-4"></i>
+              <!-- <i class="fa-brands fa-whatsapp fs-4"></i> -->
+              <img src="../../public/images/1.PNG" class="w-100" alt="">
             </div>
             <div
-              class="d-flex justify-content-center align-items-center text-white bg-red social-link"
+              class="d-flex justify-content-center align-items-center text-white social-link"
             >
-              <i class="fa-brands fa-instagram fs-4"></i>
+              <!-- <i class="fa-brands fa-instagram fs-4"></i> -->
+              <img src="../../public/images/2.PNG" class="w-100" alt="">
+
             </div>
             <div
-              class="d-flex justify-content-center align-items-center text-white bg-blue social-link"
+              class="d-flex justify-content-center align-items-center text-white social-link"
             >
-              <i class="fa-brands fa-twitter fs-4"></i>
+              <!-- <i class="fa-brands fa-twitter fs-4"></i> -->
+              <img src="../../public/images/3.PNG" class="w-100" alt="">
             </div>
             <div
-              class="d-flex justify-content-center align-items-center text-white bg-primary social-link"
+              class="d-flex justify-content-center align-items-center text-white social-link"
             >
-              <i class="fa-brands fa-facebook-f fs-4"></i>
+              <!-- <i class="fa-brands fa-facebook-f fs-4"></i> -->
+              <img src="../../public/images/4.PNG" class="w-100" alt="">
             </div>
             <div
-              class="d-flex justify-content-center align-items-center text-white bg-warning social-link"
+              class="d-flex justify-content-center align-items-center text-white social-link"
             >
-              <i class="fa-brands fa-snapchat fs-4"></i>
+              <!-- <i class="fa-brands fa-snapchat fs-4"></i> -->
+              <img src="../../public/images/5.PNG" class="w-100" alt="">
             </div>
             <div
-              class="d-flex justify-content-center align-items-center text-white bg-black social-link"
+              class="d-flex justify-content-center align-items-center text-white social-link"
             >
-              <i class="fa-brands fa-tiktok fs-4"></i>
+              <!-- <i class="fa-brands fa-tiktok fs-4"></i> -->
+              <img src="../../public/images/6.PNG" class="w-100" alt="">
             </div>
             <div
-              class="d-flex justify-content-center align-items-center text-white bg-danger social-link"
+              class="d-flex justify-content-center align-items-center text-white social-link"
             >
-              <i class="fa-brands fa-youtube fs-4"></i>
+              <!-- <i class="fa-brands fa-youtube fs-4"></i> -->
+              <img src="../../public/images/7.PNG" class="w-100" alt="">
             </div>
           </div>
       </section>
@@ -130,8 +117,8 @@ onMounted(async () => {
 }
 .social-link {
   // @apply h-10 d-flex justify-content-center align-items-center text-white w-10 bg-success rounded-full
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   border-radius: 100%;
 }
 .bg-blue {
